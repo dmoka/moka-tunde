@@ -1,0 +1,16 @@
+{
+  "siteName": "Tünde Ingatlan",
+  "ownerName": "Moka Tünde",
+  "domain": "example.com",
+  "email": "hello@example.com",
+  "phone": "+36 00 000 0000",
+  "facebook": "https://www.facebook.com/",
+  "instagram": "https://www.instagram.com/",
+  "legal": {
+    "companyName": "[VÁLLALKOZÁS NEVE]",
+    "address": "[SZÉKHELY CÍME]",
+    "regNumber": "[NYILVÁNTARTÁSI SZÁM]",
+    "taxNumber": "[ADÓSZÁM]"
+  },
+  "listingsUrl": "#"
+}

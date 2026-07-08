@@ -1,13 +1,17 @@
-# Belicza Tünde Ingatlan
+# Tünde Ingatlan — portfolio template
 
-Static website for beliczatundeingatlan.hu — a real-estate agent's site,
-originally built with WordPress/Elementor, now maintained as a plain static site.
+White-label static site for a real-estate agent portfolio, originally built
+with WordPress/Elementor, now a plain static template. Identity is
+config-driven (`brand.config.json` + `npm run brand`); see TODO-BRAND.md
+for the launch checklist.
 
 ## Quick start
 
 ```sh
 npm run dev     # serves the site at http://localhost:8900
 npm run check   # verifies every local link/asset reference resolves
+npm run build   # sync partials/ header+footer into all pages
+npm run brand   # apply brand.config.json identity across the site
 ```
 
 No build step. What's in the repo is what gets served.
