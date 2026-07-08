@@ -1,0 +1,10 @@
+{
+  "name": "moka-tunde",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Belicza Tünde Ingatlan — static website",
+  "scripts": {
+    "dev": "npx serve -l 8900 .",
+    "check": "node scripts/check-links.mjs"
+  }
+}
