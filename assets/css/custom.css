@@ -275,6 +275,148 @@
     color: #fff;
 }
 
+.adl-listing-page--properties {
+    min-height: auto;
+    padding-bottom: 64px;
+}
+
+.adl-listing-page__count {
+    border-top: 1px solid rgba(47, 52, 48, 0.16);
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 28px 0 0;
+    padding-top: 16px;
+    text-transform: uppercase;
+}
+
+.adl-property-listings {
+    background: #fff;
+    padding: 70px 24px 92px;
+}
+
+.adl-property-listings__grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.adl-property-card {
+    border: 1px solid rgba(47, 52, 48, 0.13);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.adl-property-card__media {
+    aspect-ratio: 16 / 10;
+    background: #f7f4ef;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.adl-property-card__media img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 240ms ease;
+    width: 100%;
+}
+
+.adl-property-card__media span {
+    background: rgba(47, 52, 48, 0.88);
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    left: 14px;
+    padding: 7px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 14px;
+}
+
+.adl-property-card:hover .adl-property-card__media img {
+    transform: scale(1.035);
+}
+
+.adl-property-card__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 22px;
+}
+
+.adl-property-card__location {
+    color: #9c7f55;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.adl-property-card h2 {
+    color: #2f3430;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.adl-property-card__price {
+    color: #2f3430;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 18px 0 0;
+}
+
+.adl-property-card__facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 0;
+}
+
+.adl-property-card__facts span {
+    background: #f7f4ef;
+    color: #2f3430;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 9px;
+}
+
+.adl-property-card__link {
+    color: #9c7f55;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: auto;
+    padding-top: 22px;
+    text-transform: uppercase;
+}
+
+.adl-property-card__link:hover,
+.adl-property-card__link:focus {
+    color: #2f3430;
+}
+
+@media (max-width: 1024px) {
+    .adl-property-listings__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 767px) {
     .adl-listing-page {
         padding: 72px 18px;
@@ -282,5 +424,17 @@
 
     .adl-listing-page h1 {
         font-size: 36px;
+    }
+
+    .adl-property-listings {
+        padding: 42px 18px 64px;
+    }
+
+    .adl-property-listings__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .adl-property-card h2 {
+        font-size: 21px;
     }
 }
