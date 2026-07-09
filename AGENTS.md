@@ -22,7 +22,7 @@ npm run dev     # serve locally at http://localhost:8900 (npx serve)
 npm run check   # link/asset integrity — must print "all local references OK"
 npm run build   # sync partials/header.html + footer.html into all pages
 npm run brand   # apply brand.config.json identity values across the site
-vercel deploy --prod   # deploy (Vercel project: moka-tunde)
+git push origin main    # deploy: a push a main-re automatikusan buildel a Vercelen
 ```
 
 There is no install step for the site itself; `npx serve` fetches on demand.
