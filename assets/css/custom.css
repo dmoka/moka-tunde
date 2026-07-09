@@ -411,9 +411,64 @@
     color: #2f3430;
 }
 
+.adl-category-grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.adl-category-card {
+    background: #f7f4ef;
+    border: 1px solid rgba(47, 52, 48, 0.12);
+    border-radius: 8px;
+    color: #2f3430;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    padding: 28px;
+}
+
+.adl-category-card span {
+    color: #9c7f55;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.adl-category-card strong {
+    color: #2f3430;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 34px;
+}
+
+.adl-category-card em {
+    color: #2f3430;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+.adl-category-card:hover,
+.adl-category-card:focus {
+    border-color: rgba(156, 127, 85, 0.56);
+    color: #2f3430;
+}
+
 @media (max-width: 1024px) {
     .adl-property-listings__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .adl-category-grid {
+        grid-template-columns: 1fr;
     }
 }
 

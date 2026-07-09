@@ -19,9 +19,9 @@ const pages = [];
 const activate = (html, pageUrl) => {
   // main nav <li> whose link matches this page gets the active classes
   const liRe = new RegExp(
-    `<li class="(menu-item[^"]*)"([^>]*)>\\s*<a href="${pageUrl.replace(/[/\\]/g, m => '\\' + m)}" class="elementor-item"`, 'g');
-  return html.replace(liRe, (m, cls, rest) =>
-    `<li class="${cls} current-menu-item current_page_item"${rest}><a href="${pageUrl}" aria-current="page" class="elementor-item elementor-item-active"`);
+    `<li class="(menu-item[^"]*)"([^>]*)>\\s*<a href="${pageUrl.replace(/[/\\]/g, m => '\\' + m)}" class="([^"]*elementor-(?:item|sub-item)[^"]*)"`, 'g');
+  return html.replace(liRe, (m, liCls, rest, linkCls) =>
+    `<li class="${liCls} current-menu-item current_page_item"${rest}><a href="${pageUrl}" aria-current="page" class="${linkCls} elementor-item-active"`);
 };
 
 let n = 0;
