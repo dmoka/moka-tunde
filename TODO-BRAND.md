@@ -17,13 +17,11 @@ Edit `brand.config.json`, then run `node scripts/apply-brand.mjs`:
 
 ## 2. Photos (drop-in file replacement, keep filenames + dimensions)
 
-Portraits of the previous owner — replace with Tünde's photos:
-
-- [ ] `assets/images/2022/06/R62_*.jpg` and `assets/images/2022/07/R62_*.jpg`
-      — professional portrait series used on home/rólam/kapcsolat
-- [ ] `assets/images/2026/03/bt*.jpg`, `IMG_1115*.jpeg`, `e1088008*.jpg`
-- [ ] Check every size variant (`-300x200` etc.) of a photo you replace, or
-      regenerate variants at the listed dimensions.
+Portraits: DONE — all previous-owner photos (R62 portrait series, bt*,
+IMG_1115*) were replaced with crops of `moka-tunde-profile.jpg` (2026-07-09).
+Interior photos (R62_5900, R62_6587-2, e1088008*, unsplash images) were kept.
+If higher-quality/varied portraits arrive later, replace the same filenames
+at the same dimensions.
 
 Generated placeholders to replace with real graphics:
 
