@@ -1,0 +1,228 @@
+.adl-highlight {
+    background: #f7f4ef;
+    color: #2f3430;
+    padding: 76px 24px;
+}
+
+.adl-highlight__inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.adl-highlight__eyebrow {
+    color: #9c7f55;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+}
+
+.adl-highlight h2,
+.adl-highlight h3 {
+    color: #2f3430;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.adl-highlight h2 {
+    font-size: 42px;
+    max-width: 780px;
+}
+
+.adl-highlight h3 {
+    font-size: 25px;
+}
+
+.adl-highlight p,
+.adl-highlight li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.adl-highlight__lead {
+    max-width: 780px;
+    margin: 22px 0 0;
+}
+
+.adl-service-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 36px;
+}
+
+.adl-service-card {
+    background: #fff;
+    border: 1px solid rgba(47, 52, 48, 0.12);
+    border-radius: 8px;
+    min-height: 170px;
+    padding: 24px;
+}
+
+.adl-service-card p {
+    margin: 12px 0 0;
+}
+
+.adl-process {
+    background: #fff;
+    color: #2f3430;
+    padding: 82px 24px;
+}
+
+.adl-process__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.adl-process__intro {
+    align-items: end;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr);
+    margin-bottom: 42px;
+}
+
+.adl-process__intro p {
+    margin: 0;
+}
+
+.adl-process__steps {
+    counter-reset: process;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.adl-process__step {
+    border: 1px solid rgba(47, 52, 48, 0.13);
+    border-radius: 8px;
+    min-height: 188px;
+    padding: 24px 22px;
+    position: relative;
+}
+
+.adl-process__step::before {
+    color: #9c7f55;
+    content: counter(process, decimal-leading-zero);
+    counter-increment: process;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.adl-process__step h3 {
+    font-size: 22px;
+}
+
+.adl-process__step p {
+    margin: 12px 0 0;
+}
+
+.adl-process__note {
+    background: #2f3430;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 22px;
+    padding: 26px 30px;
+}
+
+.adl-process__note p {
+    margin: 0;
+}
+
+.adl-about-panel {
+    background: #f7f4ef;
+    padding: 72px 24px;
+}
+
+.adl-about-panel__inner {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.65fr);
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.adl-about-panel h2,
+.adl-about-panel h3 {
+    color: #2f3430;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.adl-about-panel h2 {
+    font-size: 39px;
+}
+
+.adl-about-panel h3 {
+    font-size: 26px;
+}
+
+.adl-about-panel p,
+.adl-about-panel li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.adl-about-panel p {
+    margin: 22px 0 0;
+}
+
+.adl-about-panel ul {
+    list-style: none;
+    margin: 22px 0 0;
+    padding: 0;
+}
+
+.adl-about-panel li {
+    border-top: 1px solid rgba(47, 52, 48, 0.16);
+    padding: 14px 0;
+}
+
+.adl-about-panel strong {
+    color: #9c7f55;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .adl-service-grid,
+    .adl-process__steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .adl-process__intro,
+    .adl-about-panel__inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .adl-highlight,
+    .adl-process,
+    .adl-about-panel {
+        padding: 56px 18px;
+    }
+
+    .adl-highlight h2 {
+        font-size: 32px;
+    }
+
+    .adl-about-panel h2 {
+        font-size: 30px;
+    }
+
+    .adl-service-grid,
+    .adl-process__steps {
+        grid-template-columns: 1fr;
+    }
+}
