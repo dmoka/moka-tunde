@@ -1,6 +1,39 @@
+.site-main,
+body {
+    background: #eef2e7;
+    color: #2e3529;
+}
+
+.elementor-location-header .elementor-section,
+.elementor-location-footer .elementor-section {
+    background-color: #e6ecd8 !important;
+}
+
+.elementor-location-header .elementor-item,
+.elementor-location-header .elementor-sub-item,
+.elementor-location-footer .elementor-item,
+.elementor-location-footer .elementor-sub-item {
+    color: #2e3529 !important;
+}
+
+.elementor-location-header .elementor-item:hover,
+.elementor-location-header .elementor-item-active,
+.elementor-location-header .elementor-sub-item:hover,
+.elementor-location-header .elementor-sub-item.elementor-item-active,
+.elementor-location-footer .elementor-item:hover,
+.elementor-location-footer .elementor-item-active,
+.elementor-location-footer .elementor-sub-item:hover,
+.elementor-location-footer .elementor-sub-item.elementor-item-active {
+    color: #6f7f56 !important;
+}
+
+.elementor-top-section {
+    background-color: #eef2e7;
+}
+
 .adl-highlight {
-    background: #f7f4ef;
-    color: #2f3430;
+    background: #eef2e7;
+    color: #2e3529;
     padding: 76px 24px;
 }
 
@@ -10,7 +43,7 @@
 }
 
 .adl-highlight__eyebrow {
-    color: #9c7f55;
+    color: #6f7f56;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -21,7 +54,7 @@
 
 .adl-highlight h2,
 .adl-highlight h3 {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Playfair Display", serif;
     font-weight: 500;
     line-height: 1.15;
@@ -57,8 +90,8 @@
 }
 
 .adl-service-card {
-    background: #fff;
-    border: 1px solid rgba(47, 52, 48, 0.12);
+    background: #f8faf3;
+    border: 1px solid rgba(67, 81, 59, 0.16);
     border-radius: 8px;
     min-height: 170px;
     padding: 24px;
@@ -69,8 +102,8 @@
 }
 
 .adl-process {
-    background: #fff;
-    color: #2f3430;
+    background: #f8faf3;
+    color: #2e3529;
     padding: 82px 24px;
 }
 
@@ -99,7 +132,7 @@
 }
 
 .adl-process__step {
-    border: 1px solid rgba(47, 52, 48, 0.13);
+    border: 1px solid rgba(67, 81, 59, 0.16);
     border-radius: 8px;
     min-height: 188px;
     padding: 24px 22px;
@@ -107,7 +140,7 @@
 }
 
 .adl-process__step::before {
-    color: #9c7f55;
+    color: #6f7f56;
     content: counter(process, decimal-leading-zero);
     counter-increment: process;
     display: block;
@@ -126,7 +159,7 @@
 }
 
 .adl-process__note {
-    background: #2f3430;
+    background: #43513b;
     border-radius: 8px;
     color: #fff;
     margin-top: 22px;
@@ -138,7 +171,7 @@
 }
 
 .adl-about-panel {
-    background: #f7f4ef;
+    background: #eef2e7;
     padding: 72px 24px;
 }
 
@@ -152,7 +185,7 @@
 
 .adl-about-panel h2,
 .adl-about-panel h3 {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Playfair Display", serif;
     font-weight: 500;
     line-height: 1.2;
@@ -185,12 +218,12 @@
 }
 
 .adl-about-panel li {
-    border-top: 1px solid rgba(47, 52, 48, 0.16);
+    border-top: 1px solid rgba(67, 81, 59, 0.18);
     padding: 14px 0;
 }
 
 .adl-about-panel strong {
-    color: #9c7f55;
+    color: #6f7f56;
     font-weight: 600;
 }
 
@@ -228,8 +261,8 @@
 }
 
 .adl-listing-page {
-    background: #f7f4ef;
-    color: #2f3430;
+    background: #eef2e7;
+    color: #2e3529;
     min-height: 48vh;
     padding: 100px 24px;
 }
@@ -240,7 +273,7 @@
 }
 
 .adl-listing-page h1 {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Playfair Display", serif;
     font-size: 52px;
     font-weight: 500;
@@ -257,7 +290,7 @@
 }
 
 .adl-listing-page__button {
-    background: #2f3430;
+    background: #43513b;
     color: #fff;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
@@ -271,7 +304,7 @@
 
 .adl-listing-page__button:hover,
 .adl-listing-page__button:focus {
-    background: #9c7f55;
+    background: #6f7f56;
     color: #fff;
 }
 
@@ -281,7 +314,7 @@
 }
 
 .adl-listing-page__count {
-    border-top: 1px solid rgba(47, 52, 48, 0.16);
+    border-top: 1px solid rgba(67, 81, 59, 0.18);
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
@@ -292,7 +325,7 @@
 }
 
 .adl-property-listings {
-    background: #fff;
+    background: #f8faf3;
     padding: 70px 24px 92px;
 }
 
@@ -305,7 +338,8 @@
 }
 
 .adl-property-card {
-    border: 1px solid rgba(47, 52, 48, 0.13);
+    background: #fffdf8;
+    border: 1px solid rgba(67, 81, 59, 0.16);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -315,7 +349,7 @@
 
 .adl-property-card__media {
     aspect-ratio: 16 / 10;
-    background: #f7f4ef;
+    background: #eef2e7;
     display: block;
     overflow: hidden;
     position: relative;
@@ -330,7 +364,7 @@
 }
 
 .adl-property-card__media span {
-    background: rgba(47, 52, 48, 0.88);
+    background: rgba(67, 81, 59, 0.9);
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
@@ -354,7 +388,7 @@
 }
 
 .adl-property-card__location {
-    color: #9c7f55;
+    color: #6f7f56;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -363,7 +397,7 @@
 }
 
 .adl-property-card h2 {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Playfair Display", serif;
     font-size: 23px;
     font-weight: 500;
@@ -372,7 +406,7 @@
 }
 
 .adl-property-card__price {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -387,8 +421,8 @@
 }
 
 .adl-property-card__facts span {
-    background: #f7f4ef;
-    color: #2f3430;
+    background: #eef2e7;
+    color: #2e3529;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -396,7 +430,7 @@
 }
 
 .adl-property-card__link {
-    color: #9c7f55;
+    color: #6f7f56;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
@@ -408,7 +442,7 @@
 
 .adl-property-card__link:hover,
 .adl-property-card__link:focus {
-    color: #2f3430;
+    color: #2e3529;
 }
 
 .adl-category-grid {
@@ -420,10 +454,10 @@
 }
 
 .adl-category-card {
-    background: #f7f4ef;
-    border: 1px solid rgba(47, 52, 48, 0.12);
+    background: #f8faf3;
+    border: 1px solid rgba(67, 81, 59, 0.16);
     border-radius: 8px;
-    color: #2f3430;
+    color: #2e3529;
     display: flex;
     flex-direction: column;
     min-height: 220px;
@@ -431,7 +465,7 @@
 }
 
 .adl-category-card span {
-    color: #9c7f55;
+    color: #6f7f56;
     font-family: "Montserrat", sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -439,7 +473,7 @@
 }
 
 .adl-category-card strong {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Playfair Display", serif;
     font-size: 30px;
     font-weight: 500;
@@ -448,7 +482,7 @@
 }
 
 .adl-category-card em {
-    color: #2f3430;
+    color: #2e3529;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-style: normal;
@@ -458,8 +492,8 @@
 
 .adl-category-card:hover,
 .adl-category-card:focus {
-    border-color: rgba(156, 127, 85, 0.56);
-    color: #2f3430;
+    border-color: rgba(111, 127, 86, 0.56);
+    color: #2e3529;
 }
 
 @media (max-width: 1024px) {
