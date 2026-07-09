@@ -226,3 +226,61 @@
         grid-template-columns: 1fr;
     }
 }
+
+.adl-listing-page {
+    background: #f7f4ef;
+    color: #2f3430;
+    min-height: 48vh;
+    padding: 100px 24px;
+}
+
+.adl-listing-page__inner {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.adl-listing-page h1 {
+    color: #2f3430;
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 1.12;
+    margin: 0;
+}
+
+.adl-listing-page__lead {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+    margin: 24px 0 0;
+    max-width: 680px;
+}
+
+.adl-listing-page__button {
+    background: #2f3430;
+    color: #fff;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: 30px;
+    padding: 14px 24px;
+    text-transform: uppercase;
+}
+
+.adl-listing-page__button:hover,
+.adl-listing-page__button:focus {
+    background: #9c7f55;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .adl-listing-page {
+        padding: 72px 18px;
+    }
+
+    .adl-listing-page h1 {
+        font-size: 36px;
+    }
+}

@@ -31,8 +31,8 @@ for (const p of pages) {
   let h = activate(header, pageUrl);
   if (pageUrl === '/') h = h.replace('<img width="1567"', '<img fetchpriority="high" width="1567"');
   const s = readFileSync(p, 'utf8');
-  let ns = s.replace(/<header data-elementor-type="header"[\s\S]*?<\/header>/, () => h);
-  ns = ns.replace(/<footer data-elementor-type="footer"[\s\S]*?<\/footer>/, () => activate(footer, pageUrl));
+  let ns = s.replace(/\n*<header data-elementor-type="header"[\s\S]*?<\/header>\n*/, () => `\n${h}\n`);
+  ns = ns.replace(/\n*<footer data-elementor-type="footer"[\s\S]*?<\/footer>\n*/, () => `\n${activate(footer, pageUrl)}\n`);
   if (ns !== s) { writeFileSync(p, ns); n++; }
 }
 console.log(`synced partials into ${n}/${pages.length} pages`);
