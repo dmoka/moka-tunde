@@ -41,6 +41,18 @@ body {
     background-color: #9AA995 !important;
 }
 
+.elementor-location-header .elementor-widget-theme-site-logo img {
+    width: clamp(82px, 9vw, 118px) !important;
+    max-height: 106px;
+    object-fit: contain;
+}
+
+.elementor-location-footer .elementor-element-3fce8b0 img {
+    width: min(168px, 56vw) !important;
+    height: auto;
+    object-fit: contain;
+}
+
 .elementor-top-section {
     background-color: #F6F0E3 !important;
 }
