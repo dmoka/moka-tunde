@@ -58,10 +58,89 @@ body {
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59 {
-    background-image: linear-gradient(90deg, rgba(48, 64, 46, 0.78), rgba(48, 64, 46, 0.24)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
+    background-image: linear-gradient(90deg, rgba(48, 64, 46, 0.82), rgba(48, 64, 46, 0.5) 46%, rgba(48, 64, 46, 0.16)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    isolation: isolate;
+    min-height: 610px;
+    overflow: hidden;
+    padding: 68px 28px 60px !important;
+    position: relative;
+}
+
+.elementor-40 .elementor-element.elementor-element-18cce59::before {
+    background: rgba(246, 240, 227, 0.12);
+    content: "";
+    inset: 28px max(24px, 5vw);
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+}
+
+.elementor-40 .elementor-element.elementor-element-18cce59 > .elementor-container {
+    align-items: center;
+    gap: clamp(22px, 4vw, 58px);
+    justify-content: space-between;
+    max-width: 1180px;
+    min-height: 520px !important;
+    position: relative;
+    z-index: 1;
+}
+
+.elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09 {
+    order: 1;
+    width: 43% !important;
+}
+
+.elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
+    order: 2;
+    width: 31% !important;
+}
+
+.elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
+    order: 3;
+    width: 20% !important;
+}
+
+.elementor-40 .elementor-element.elementor-element-a7ef53a > .elementor-widget-container {
+    margin-left: 0 !important;
+}
+
+.elementor-40 .elementor-element.elementor-element-a7ef53a .elementor-heading-title {
+    font-size: clamp(44px, 5.7vw, 78px) !important;
+    line-height: 0.98 !important;
+    text-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+}
+
+.elementor-40 .elementor-element.elementor-element-9213544 {
+    background: rgba(48, 64, 46, 0.62);
+    border-left: 3px solid #F6F0E3;
+    padding: 22px 24px;
+}
+
+.elementor-40 .elementor-element.elementor-element-9213544 p {
+    margin-bottom: 12px;
+}
+
+.elementor-40 .elementor-element.elementor-element-9213544 p:last-child {
+    margin-bottom: 0;
+}
+
+.elementor-40 .elementor-element.elementor-element-a9ac717 {
+    display: none;
+}
+
+.elementor-40 .elementor-element.elementor-element-f730ce1 {
+    margin-top: 120px;
+    text-align: right;
+}
+
+.elementor-40 .elementor-element.elementor-element-f730ce1 img {
+    border: 7px solid rgba(246, 240, 227, 0.86);
+    border-radius: 160px 160px 10px 10px;
+    max-width: min(245px, 100%) !important;
+    transform: translateX(10px);
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-heading-title,
@@ -328,6 +407,33 @@ body {
 
     .elementor-40 .elementor-element.elementor-element-18cce59 {
         background-image: linear-gradient(180deg, rgba(48, 64, 46, 0.84), rgba(48, 64, 46, 0.36)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
+        min-height: auto;
+        padding: 58px 22px 50px !important;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 > .elementor-container {
+        flex-wrap: wrap;
+        gap: 24px;
+        min-height: auto !important;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09,
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
+        width: calc(50% - 12px) !important;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
+        width: 100% !important;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-f730ce1 {
+        margin-top: 0;
+        text-align: right;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-f730ce1 img {
+        max-width: 230px !important;
+        transform: none;
     }
 }
 
@@ -350,6 +456,40 @@ body {
     .adl-process__steps,
     .adl-photo-strip__inner {
         grid-template-columns: 1fr;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 {
+        padding: 48px 18px 42px !important;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59::before {
+        inset: 18px;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09,
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8,
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
+        width: 100% !important;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09 {
+        order: 1;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
+        order: 2;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
+        order: 3;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-f730ce1 {
+        text-align: center;
+    }
+
+    .elementor-40 .elementor-element.elementor-element-f730ce1 img {
+        max-width: 205px !important;
     }
 }
 
