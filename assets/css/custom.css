@@ -1246,6 +1246,100 @@ body {
     line-height: 1.65;
 }
 
+.adl-home-about {
+    background: #FFFDF8;
+    color: #263927;
+    padding: 78px 24px 86px;
+}
+
+.adl-home-about__inner {
+    align-items: center;
+    display: grid;
+    gap: clamp(34px, 5vw, 70px);
+    grid-template-columns: minmax(300px, 0.78fr) minmax(0, 1fr);
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.adl-home-about__ornament {
+    align-items: center;
+    background: #F6F0E3;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.adl-home-about__ornament::before,
+.adl-home-about__ornament::after {
+    background: linear-gradient(90deg, rgba(184, 154, 107, 0), #B89A6B, rgba(184, 154, 107, 0));
+    content: "";
+    height: 1px;
+    left: 10%;
+    position: absolute;
+    right: 10%;
+}
+
+.adl-home-about__ornament::before {
+    top: 28px;
+}
+
+.adl-home-about__ornament::after {
+    bottom: 28px;
+}
+
+.adl-home-about__ornament img {
+    display: block;
+    max-width: min(82%, 380px);
+    width: 100%;
+}
+
+.adl-home-about__copy {
+    max-width: 600px;
+}
+
+.adl-home-about h2 {
+    color: #30402E;
+    font-family: "Inria Serif", "Playfair Display", serif;
+    font-size: clamp(31px, 3.2vw, 46px);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.16;
+    margin: 0 0 24px;
+    text-wrap: balance;
+}
+
+.adl-home-about p:not(.adl-section-label) {
+    color: #52634F;
+    font-family: "Poppins", "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.72;
+    margin: 0 0 16px;
+}
+
+.adl-home-about a {
+    align-items: center;
+    background: #30402E;
+    color: #FFFFFF;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 12px;
+    min-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 180ms ease, transform 180ms ease;
+}
+
+.adl-home-about a:hover {
+    background: #52634F;
+    transform: translateY(-2px);
+}
+
 .adl-home-cta {
     background: #263927;
     color: #FFFFFF;
@@ -1509,6 +1603,7 @@ body {
     }
 
     .adl-home-focus__inner,
+    .adl-home-about__inner,
     .adl-home-cta__inner,
     .adl-services-hero,
     .adl-services-intro,
@@ -1594,7 +1689,20 @@ body {
         padding-top: 58px;
     }
 
+    .adl-home-about {
+        padding: 58px 18px 64px;
+    }
+
+    .adl-home-about__ornament {
+        min-height: 220px;
+    }
+
+    .adl-home-about__ornament img {
+        max-width: min(88%, 320px);
+    }
+
     .adl-home-focus__copy h2,
+    .adl-home-about h2,
     .adl-services-intro h2,
     .adl-services-flow h2,
     .adl-services-proof h2 {
