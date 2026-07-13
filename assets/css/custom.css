@@ -61,8 +61,8 @@ body {
 }
 
 .elementor-location-header .elementor-widget-theme-site-logo img {
-    width: clamp(82px, 9vw, 118px) !important;
-    max-height: 106px;
+    width: clamp(92px, 10vw, 132px) !important;
+    max-height: 118px;
     object-fit: contain;
 }
 
