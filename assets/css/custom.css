@@ -59,7 +59,7 @@ body {
 
 .elementor-40 .elementor-element.elementor-element-18cce59 {
     background-attachment: fixed;
-    background-image: linear-gradient(100deg, rgba(35, 45, 34, 0.9), rgba(48, 64, 46, 0.62) 45%, rgba(48, 64, 46, 0.2)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
+    background-image: linear-gradient(100deg, rgba(35, 45, 34, 0.88), rgba(48, 64, 46, 0.58) 46%, rgba(48, 64, 46, 0.14)), url("/assets/images/2026/07/art-deco-vilagos-nappali-hero.png") !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -92,17 +92,16 @@ body {
 
 .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09 {
     order: 1;
-    width: 43% !important;
+    width: 48% !important;
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
     order: 2;
-    width: 31% !important;
+    width: 34% !important;
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
-    order: 3;
-    width: 20% !important;
+    display: none !important;
 }
 
 .elementor-40 .elementor-element.elementor-element-a7ef53a > .elementor-widget-container {
@@ -180,19 +179,6 @@ body {
 
 .elementor-40 .elementor-element.elementor-element-a9ac717 {
     display: none;
-}
-
-.elementor-40 .elementor-element.elementor-element-f730ce1 {
-    margin-top: 120px;
-    text-align: right;
-}
-
-.elementor-40 .elementor-element.elementor-element-f730ce1 img {
-    border: 7px solid rgba(246, 240, 227, 0.86);
-    border-radius: 160px 160px 10px 10px;
-    animation: adlPortraitFloat 7s ease-in-out infinite;
-    max-width: min(245px, 100%) !important;
-    transform: translateX(10px);
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-heading-title,
@@ -536,7 +522,7 @@ body {
 
     .elementor-40 .elementor-element.elementor-element-18cce59 {
         background-attachment: scroll;
-        background-image: linear-gradient(180deg, rgba(48, 64, 46, 0.86), rgba(48, 64, 46, 0.44)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
+        background-image: linear-gradient(180deg, rgba(48, 64, 46, 0.84), rgba(48, 64, 46, 0.42)), url("/assets/images/2026/07/art-deco-vilagos-nappali-hero.png") !important;
         min-height: auto;
         padding: 58px 22px 50px !important;
     }
@@ -550,20 +536,6 @@ body {
     .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09,
     .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
         width: calc(50% - 12px) !important;
-    }
-
-    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
-        width: 100% !important;
-    }
-
-    .elementor-40 .elementor-element.elementor-element-f730ce1 {
-        margin-top: 0;
-        text-align: right;
-    }
-
-    .elementor-40 .elementor-element.elementor-element-f730ce1 img {
-        max-width: 230px !important;
-        transform: none;
     }
 }
 
@@ -608,8 +580,7 @@ body {
     }
 
     .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-d715a09,
-    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8,
-    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
+    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
         width: 100% !important;
     }
 
@@ -617,25 +588,12 @@ body {
         order: 1;
     }
 
-    .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
-        order: 3;
-    }
-
     .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
         order: 2;
-    }
-
-    .elementor-40 .elementor-element.elementor-element-f730ce1 {
-        text-align: center;
-    }
-
-    .elementor-40 .elementor-element.elementor-element-f730ce1 img {
-        max-width: 176px !important;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .elementor-40 .elementor-element.elementor-element-f730ce1 img,
     .adl-photo-card img,
     .adl-reveal,
     .adl-service-card,
