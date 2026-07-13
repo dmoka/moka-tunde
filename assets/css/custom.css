@@ -951,6 +951,336 @@ body {
     color: #6F7F56;
 }
 
+.adl-section-label {
+    color: #8A6F4D;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+}
+
+.adl-home-focus {
+    background: #FFFDF8;
+    color: #263927;
+    padding: 84px 24px;
+}
+
+.adl-home-focus__inner {
+    display: grid;
+    gap: 46px;
+    grid-template-columns: minmax(0, 0.8fr) minmax(360px, 1fr);
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.adl-home-focus__copy h2,
+.adl-home-cta h2,
+.adl-services-page h1,
+.adl-services-page h2 {
+    color: #263927;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.adl-home-focus__copy h2 {
+    font-size: 46px;
+    line-height: 1.08;
+    margin: 0 0 22px;
+}
+
+.adl-home-focus__copy p:not(.adl-section-label),
+.adl-home-cta p {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.adl-home-focus__points {
+    display: grid;
+    gap: 14px;
+}
+
+.adl-home-focus__points div {
+    border-left: 3px solid #B89A6B;
+    background: #F7F1E5;
+    padding: 22px 24px;
+}
+
+.adl-home-focus__points strong {
+    color: #263927;
+    display: block;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.adl-home-focus__points span {
+    color: #52634F;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.adl-home-cta {
+    background: #263927;
+    color: #FFFFFF;
+    padding: 64px 24px;
+}
+
+.adl-home-cta__inner {
+    align-items: center;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.65fr) auto;
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.adl-home-cta h2 {
+    color: #FFFFFF;
+    font-size: 34px;
+    line-height: 1.18;
+    margin: 0;
+}
+
+.adl-home-cta p {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.adl-home-cta a,
+.adl-services-hero__content a,
+.adl-services-proof a {
+    align-items: center;
+    background: #B89A6B;
+    color: #FFFFFF;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 180ms ease, transform 180ms ease;
+}
+
+.adl-home-cta a:hover,
+.adl-services-hero__content a:hover,
+.adl-services-proof a:hover {
+    background: #9A7B50;
+    transform: translateY(-2px);
+}
+
+.adl-services-page {
+    background: #FFFDF8;
+    color: #263927;
+}
+
+.adl-services-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.78fr);
+    min-height: 640px;
+}
+
+.adl-services-hero__media {
+    overflow: hidden;
+}
+
+.adl-services-hero__media img {
+    animation: adlServiceImageDrift 14s ease-in-out infinite alternate;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.adl-services-hero__content {
+    align-self: center;
+    padding: 72px clamp(32px, 6vw, 86px);
+}
+
+.adl-services-hero h1 {
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1.02;
+    margin: 0 0 28px;
+}
+
+.adl-services-hero__content p:not(.adl-section-label) {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.78;
+    margin: 0 0 30px;
+}
+
+.adl-services-intro,
+.adl-services-matrix,
+.adl-services-flow,
+.adl-services-proof {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.adl-services-intro {
+    display: grid;
+    gap: 52px;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.7fr);
+    padding-bottom: 74px;
+    padding-top: 88px;
+}
+
+.adl-services-intro h2,
+.adl-services-flow h2,
+.adl-services-proof h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.adl-services-intro > p {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.adl-services-matrix {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding-bottom: 88px;
+}
+
+.adl-service-tile {
+    background: #F7F1E5;
+    min-height: 260px;
+    padding: 32px;
+}
+
+.adl-service-tile span {
+    color: #B89A6B;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.adl-service-tile h3 {
+    color: #263927;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 14px;
+}
+
+.adl-service-tile p,
+.adl-services-flow li span,
+.adl-services-proof p {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.adl-services-flow {
+    background: #263927;
+    color: #FFFFFF;
+    max-width: none;
+    padding-bottom: 88px;
+    padding-top: 88px;
+}
+
+.adl-services-flow__header,
+.adl-services-flow ol {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+}
+
+.adl-services-flow h2 {
+    color: #FFFFFF;
+    margin-bottom: 38px;
+    max-width: 760px;
+}
+
+.adl-services-flow ol {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.adl-services-flow li {
+    align-items: start;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 220px minmax(0, 1fr);
+    padding: 24px 0;
+}
+
+.adl-services-flow li strong {
+    color: #FFFFFF;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.adl-services-flow li span {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+}
+
+.adl-services-proof {
+    align-items: center;
+    display: grid;
+    gap: 54px;
+    grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.8fr);
+    padding-bottom: 96px;
+    padding-top: 96px;
+}
+
+.adl-services-proof img {
+    aspect-ratio: 4 / 3;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.adl-services-proof h2 {
+    margin-bottom: 20px;
+}
+
+.adl-services-proof p {
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+@keyframes adlServiceImageDrift {
+    from {
+        transform: scale(1.02) translateX(0);
+    }
+
+    to {
+        transform: scale(1.08) translateX(-2%);
+    }
+}
+
 @media (max-width: 1024px) {
     .adl-property-listings__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -958,6 +1288,30 @@ body {
 
     .adl-category-grid {
         grid-template-columns: 1fr;
+    }
+
+    .adl-home-focus__inner,
+    .adl-home-cta__inner,
+    .adl-services-hero,
+    .adl-services-intro,
+    .adl-services-proof {
+        grid-template-columns: 1fr;
+    }
+
+    .adl-home-cta__inner {
+        align-items: start;
+    }
+
+    .adl-services-hero {
+        min-height: 0;
+    }
+
+    .adl-services-hero__media {
+        min-height: 360px;
+    }
+
+    .adl-services-matrix {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -1006,5 +1360,75 @@ body {
 
     .adl-blog-post .adl-blog-content h2 {
         font-size: 27px;
+    }
+
+    .adl-home-focus,
+    .adl-home-cta,
+    .adl-services-intro,
+    .adl-services-flow,
+    .adl-services-proof {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .adl-home-focus {
+        padding-bottom: 58px;
+        padding-top: 58px;
+    }
+
+    .adl-home-focus__copy h2,
+    .adl-services-intro h2,
+    .adl-services-flow h2,
+    .adl-services-proof h2 {
+        font-size: 32px;
+    }
+
+    .adl-home-cta h2 {
+        font-size: 28px;
+    }
+
+    .adl-services-hero__content {
+        padding: 44px 18px 58px;
+    }
+
+    .adl-services-hero h1 {
+        font-size: 38px;
+    }
+
+    .adl-services-hero__media {
+        min-height: 280px;
+    }
+
+    .adl-services-intro,
+    .adl-services-proof {
+        padding-bottom: 58px;
+        padding-top: 58px;
+    }
+
+    .adl-services-matrix {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-bottom: 58px;
+    }
+
+    .adl-service-tile {
+        background: #FFFFFF;
+        border: 1px solid rgba(184, 154, 107, 0.22);
+        min-height: 0;
+        padding: 24px;
+    }
+
+    .adl-service-tile span {
+        margin-bottom: 16px;
+    }
+
+    .adl-services-flow {
+        padding-bottom: 58px;
+        padding-top: 58px;
+    }
+
+    .adl-services-flow li {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 }
