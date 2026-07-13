@@ -889,6 +889,68 @@ body {
     width: 100%;
 }
 
+.adl-blog-post .adl-blog-hero {
+    padding: 84px 24px 36px;
+}
+
+.adl-blog-post .adl-blog-hero .elementor-container,
+.adl-blog-post .adl-blog-content .elementor-container {
+    max-width: 980px;
+}
+
+.adl-blog-post h1.elementor-heading-title {
+    color: #30402E;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.14;
+    margin: 0 auto 24px;
+    max-width: 900px;
+    text-align: center;
+}
+
+.adl-blog-post .adl-blog-lead {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0 auto 34px;
+    max-width: 760px;
+    text-align: center;
+}
+
+.adl-blog-post .adl-blog-hero-image {
+    aspect-ratio: 16 / 9;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.adl-blog-post .adl-blog-content {
+    padding: 28px 24px 88px;
+}
+
+.adl-blog-post .adl-blog-content .elementor-widget-container {
+    color: #30402E;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.adl-blog-post .adl-blog-content h2 {
+    color: #30402E;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 42px 0 18px;
+}
+
+.adl-blog-post .adl-blog-content a {
+    color: #6F7F56;
+}
+
 @media (max-width: 1024px) {
     .adl-property-listings__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -918,5 +980,31 @@ body {
 
     .adl-property-card h2 {
         font-size: 21px;
+    }
+
+    .adl-blog-post .adl-blog-hero {
+        padding: 58px 18px 24px;
+    }
+
+    .adl-blog-post h1.elementor-heading-title {
+        font-size: 34px;
+    }
+
+    .adl-blog-post .adl-blog-lead {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .adl-blog-post .adl-blog-content {
+        padding: 22px 18px 64px;
+    }
+
+    .adl-blog-post .adl-blog-content .elementor-widget-container {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .adl-blog-post .adl-blog-content h2 {
+        font-size: 27px;
     }
 }
