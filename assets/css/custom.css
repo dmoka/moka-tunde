@@ -58,7 +58,8 @@ body {
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59 {
-    background-image: linear-gradient(90deg, rgba(48, 64, 46, 0.82), rgba(48, 64, 46, 0.5) 46%, rgba(48, 64, 46, 0.16)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
+    background-attachment: fixed;
+    background-image: linear-gradient(100deg, rgba(35, 45, 34, 0.9), rgba(48, 64, 46, 0.62) 45%, rgba(48, 64, 46, 0.2)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -70,7 +71,8 @@ body {
 }
 
 .elementor-40 .elementor-element.elementor-element-18cce59::before {
-    background: rgba(246, 240, 227, 0.12);
+    background: linear-gradient(135deg, rgba(246, 240, 227, 0.18), rgba(246, 240, 227, 0.04));
+    border: 1px solid rgba(246, 240, 227, 0.32);
     content: "";
     inset: 28px max(24px, 5vw);
     pointer-events: none;
@@ -110,13 +112,17 @@ body {
 .elementor-40 .elementor-element.elementor-element-a7ef53a .elementor-heading-title {
     font-size: clamp(44px, 5.7vw, 78px) !important;
     line-height: 0.98 !important;
+    max-width: 620px;
     text-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
 }
 
 .elementor-40 .elementor-element.elementor-element-9213544 {
-    background: rgba(48, 64, 46, 0.62);
+    backdrop-filter: blur(16px);
+    background: rgba(48, 64, 46, 0.66);
     border-left: 3px solid #F6F0E3;
+    box-shadow: 0 24px 70px rgba(21, 31, 20, 0.22);
     padding: 22px 24px;
+    text-align: left;
 }
 
 .elementor-40 .elementor-element.elementor-element-9213544 p {
@@ -125,6 +131,51 @@ body {
 
 .elementor-40 .elementor-element.elementor-element-9213544 p:last-child {
     margin-bottom: 0;
+}
+
+.adl-hero-kicker {
+    color: #F1C77A !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 12px !important;
+    text-transform: uppercase;
+}
+
+.adl-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.adl-hero-actions a {
+    align-items: center;
+    border: 1px solid rgba(246, 240, 227, 0.7);
+    color: #fff;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 44px;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.adl-hero-actions a:first-child {
+    background: #F6F0E3;
+    color: #30402E !important;
+}
+
+.adl-hero-actions a:hover,
+.adl-hero-actions a:focus {
+    background: #F1C77A;
+    border-color: #F1C77A;
+    color: #30402E !important;
+    transform: translateY(-2px);
 }
 
 .elementor-40 .elementor-element.elementor-element-a9ac717 {
@@ -139,6 +190,7 @@ body {
 .elementor-40 .elementor-element.elementor-element-f730ce1 img {
     border: 7px solid rgba(246, 240, 227, 0.86);
     border-radius: 160px 160px 10px 10px;
+    animation: adlPortraitFloat 7s ease-in-out infinite;
     max-width: min(245px, 100%) !important;
     transform: translateX(10px);
 }
@@ -159,6 +211,47 @@ body {
 .elementor-top-section .elementor-widget-text-editor p,
 .elementor-top-section .elementor-widget-text-editor span {
     color: #30402E !important;
+}
+
+.adl-trust-strip {
+    background: #30402E;
+    color: #fff;
+    padding: 28px 24px;
+}
+
+.adl-trust-strip__inner {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.adl-trust-item {
+    background: rgba(246, 240, 227, 0.07);
+    min-height: 136px;
+    padding: 24px;
+}
+
+.adl-trust-item strong,
+.adl-trust-item span {
+    display: block;
+}
+
+.adl-trust-item strong {
+    color: #F1C77A;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.adl-trust-item span {
+    color: rgba(255, 255, 255, 0.82);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 12px;
 }
 
 .adl-highlight {
@@ -223,8 +316,16 @@ body {
     background: #FBF7EC;
     border: 1px solid rgba(154, 169, 149, 0.16);
     border-radius: 8px;
+    box-shadow: 0 12px 34px rgba(48, 64, 46, 0.06);
     min-height: 170px;
     padding: 24px;
+    transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.adl-service-card:hover {
+    border-color: rgba(154, 169, 149, 0.48);
+    box-shadow: 0 18px 44px rgba(48, 64, 46, 0.12);
+    transform: translateY(-4px);
 }
 
 .adl-service-card p {
@@ -264,7 +365,34 @@ body {
     display: block;
     height: 100%;
     object-fit: cover;
+    transition: transform 900ms ease;
     width: 100%;
+}
+
+.adl-photo-card:hover img {
+    transform: scale(1.045);
+}
+
+.adl-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.adl-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes adlPortraitFloat {
+    0%,
+    100% {
+        transform: translateX(10px) translateY(0);
+    }
+
+    50% {
+        transform: translateX(10px) translateY(-10px);
+    }
 }
 
 .adl-process {
@@ -396,6 +524,7 @@ body {
 @media (max-width: 1024px) {
     .adl-service-grid,
     .adl-process__steps,
+    .adl-trust-strip__inner,
     .adl-photo-strip__inner {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -406,7 +535,8 @@ body {
     }
 
     .elementor-40 .elementor-element.elementor-element-18cce59 {
-        background-image: linear-gradient(180deg, rgba(48, 64, 46, 0.84), rgba(48, 64, 46, 0.36)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
+        background-attachment: scroll;
+        background-image: linear-gradient(180deg, rgba(48, 64, 46, 0.86), rgba(48, 64, 46, 0.44)), url("/assets/images/2026/07/sajat/budapest-parlament-vibe-1532.jpg") !important;
         min-height: auto;
         padding: 58px 22px 50px !important;
     }
@@ -440,6 +570,7 @@ body {
 @media (max-width: 767px) {
     .adl-highlight,
     .adl-process,
+    .adl-trust-strip,
     .adl-about-panel {
         padding: 56px 18px;
     }
@@ -454,12 +585,22 @@ body {
 
     .adl-service-grid,
     .adl-process__steps,
+    .adl-trust-strip__inner,
     .adl-photo-strip__inner {
         grid-template-columns: 1fr;
     }
 
+    .adl-trust-item {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .adl-hero-actions a {
+        width: 100%;
+    }
+
     .elementor-40 .elementor-element.elementor-element-18cce59 {
-        padding: 48px 18px 42px !important;
+        padding: 40px 18px 38px !important;
     }
 
     .elementor-40 .elementor-element.elementor-element-18cce59::before {
@@ -477,11 +618,11 @@ body {
     }
 
     .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-7b89d45 {
-        order: 2;
+        order: 3;
     }
 
     .elementor-40 .elementor-element.elementor-element-18cce59 .elementor-element-37f30c8 {
-        order: 3;
+        order: 2;
     }
 
     .elementor-40 .elementor-element.elementor-element-f730ce1 {
@@ -489,7 +630,18 @@ body {
     }
 
     .elementor-40 .elementor-element.elementor-element-f730ce1 img {
-        max-width: 205px !important;
+        max-width: 176px !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .elementor-40 .elementor-element.elementor-element-f730ce1 img,
+    .adl-photo-card img,
+    .adl-reveal,
+    .adl-service-card,
+    .adl-hero-actions a {
+        animation: none;
+        transition: none;
     }
 }
 
