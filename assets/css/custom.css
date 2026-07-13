@@ -1661,7 +1661,7 @@ body {
         linear-gradient(90deg, transparent 0, transparent calc(50% - 220px), #B89A6B calc(50% - 220px), #B89A6B calc(50% - 188px), transparent calc(50% - 188px), transparent calc(50% + 188px), #B89A6B calc(50% + 188px), #B89A6B calc(50% + 220px), transparent calc(50% + 220px)),
         linear-gradient(90deg, rgba(184, 154, 107, 0), #D8BF82 18%, #B89A6B 50%, #D8BF82 82%, rgba(184, 154, 107, 0));
     content: "";
-    height: 7px;
+    height: 2px;
     left: 0;
     position: absolute;
     right: 0;
@@ -2002,7 +2002,7 @@ body {
 @media (max-width: 767px) {
     .adl-trust-strip::before {
         background: linear-gradient(90deg, rgba(184, 154, 107, 0), #D8BF82 20%, #B89A6B 50%, #D8BF82 80%, rgba(184, 154, 107, 0));
-        height: 5px;
+        height: 2px;
     }
 
     .adl-about-redesign,
