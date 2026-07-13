@@ -1261,37 +1261,25 @@ body {
     max-width: 1080px;
 }
 
-.adl-home-about__ornament {
-    align-items: center;
-    background: #F6F0E3;
-    display: flex;
-    justify-content: center;
-    min-height: 300px;
+.adl-home-about__media {
+    aspect-ratio: 4 / 3.25;
     overflow: hidden;
     position: relative;
 }
 
-.adl-home-about__ornament::before,
-.adl-home-about__ornament::after {
-    background: linear-gradient(90deg, rgba(184, 154, 107, 0), #B89A6B, rgba(184, 154, 107, 0));
+.adl-home-about__media::after {
+    border: 1px solid rgba(184, 154, 107, 0.62);
     content: "";
-    height: 1px;
-    left: 10%;
+    inset: 16px;
+    pointer-events: none;
     position: absolute;
-    right: 10%;
 }
 
-.adl-home-about__ornament::before {
-    top: 28px;
-}
-
-.adl-home-about__ornament::after {
-    bottom: 28px;
-}
-
-.adl-home-about__ornament img {
+.adl-home-about__media img {
     display: block;
-    max-width: min(82%, 380px);
+    height: 100%;
+    object-fit: cover;
+    object-position: 48% 42%;
     width: 100%;
 }
 
@@ -1693,12 +1681,12 @@ body {
         padding: 58px 18px 64px;
     }
 
-    .adl-home-about__ornament {
-        min-height: 220px;
+    .adl-home-about__media {
+        aspect-ratio: 4 / 3.25;
     }
 
-    .adl-home-about__ornament img {
-        max-width: min(88%, 320px);
+    .adl-home-about__media::after {
+        inset: 12px;
     }
 
     .adl-home-focus__copy h2,
