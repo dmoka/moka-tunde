@@ -889,6 +889,181 @@ body {
     width: 100%;
 }
 
+.elementor-49 .elementor-element.elementor-element-d00299f {
+    padding: 76px 24px !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-d00299f > .elementor-container {
+    align-items: center;
+    gap: clamp(28px, 5vw, 64px);
+    max-width: 1060px;
+}
+
+.elementor-49 .elementor-element.elementor-element-b0fabc2 {
+    width: 46% !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-3166ad3 {
+    width: 44% !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-b0fabc2 > .elementor-widget-wrap,
+.elementor-49 .elementor-element.elementor-element-3166ad3 > .elementor-widget-wrap {
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-0ebd4a8 {
+    display: none;
+}
+
+.elementor-49 .elementor-element.elementor-element-31ccae9 {
+    width: 100%;
+}
+
+.elementor-49 .contact-photo-pair {
+    border-radius: 8px;
+    box-shadow: 0 18px 42px rgba(48, 64, 46, 0.14);
+    overflow: hidden;
+}
+
+.elementor-49 .contact-photo-pair img {
+    aspect-ratio: 4 / 5;
+    object-position: center top;
+}
+
+.elementor-49 .elementor-element.elementor-element-de87713,
+.elementor-49 .elementor-element.elementor-element-91b1927,
+.elementor-49 .elementor-element.elementor-element-69cb88e {
+    max-width: 430px;
+    width: 100%;
+}
+
+.elementor-49 .elementor-element.elementor-element-de87713 {
+    text-align: left !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-de87713 .elementor-heading-title {
+    color: #30402E !important;
+    font-family: "Playfair Display", serif !important;
+    font-size: 38px !important;
+    font-weight: 500 !important;
+    line-height: 1.15 !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-91b1927 {
+    color: #30402E !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    margin: 12px 0 18px;
+    text-align: left !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-91b1927 p {
+    margin: 0 0 4px !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-91b1927 p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.elementor-49 .elementor-element.elementor-element-91b1927 p br {
+    display: none;
+}
+
+.elementor-49 .wpforms-container {
+    margin: 0 !important;
+}
+
+.elementor-49 .wpforms-container .wpforms-field {
+    padding: 8px 0 !important;
+}
+
+.elementor-49 .wpforms-container input,
+.elementor-49 .wpforms-container textarea,
+.elementor-49 .wpforms-container .wpforms-field-medium {
+    background: #fffdf8 !important;
+    border: 1px solid rgba(154, 169, 149, 0.36) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    max-width: 100% !important;
+    min-height: 44px;
+    padding: 11px 12px !important;
+    width: 100% !important;
+}
+
+.elementor-49 .wpforms-container textarea {
+    min-height: 116px;
+}
+
+.elementor-49 .wpforms-container label {
+    color: #30402E !important;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin-bottom: 6px !important;
+}
+
+.elementor-49 .wpforms-container .wpforms-submit-container {
+    padding-top: 12px !important;
+}
+
+.elementor-49 .wpforms-container button.wpforms-submit {
+    background: #30402E !important;
+    border: 1px solid #30402E !important;
+    color: #fff !important;
+    min-height: 46px;
+    padding: 12px 24px !important;
+    width: auto;
+}
+
+.elementor-49 .wpforms-container button.wpforms-submit:hover,
+.elementor-49 .wpforms-container button.wpforms-submit:focus {
+    background: #9AA995 !important;
+    border-color: #9AA995 !important;
+}
+
+@media (max-width: 1024px) {
+    .elementor-49 .elementor-element.elementor-element-d00299f {
+        padding: 58px 22px !important;
+    }
+
+    .elementor-49 .elementor-element.elementor-element-d00299f > .elementor-container {
+        flex-wrap: wrap;
+    }
+
+    .elementor-49 .elementor-element.elementor-element-b0fabc2,
+    .elementor-49 .elementor-element.elementor-element-3166ad3 {
+        width: calc(50% - 18px) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .elementor-49 .elementor-element.elementor-element-d00299f {
+        padding: 42px 18px !important;
+    }
+
+    .elementor-49 .elementor-element.elementor-element-b0fabc2,
+    .elementor-49 .elementor-element.elementor-element-3166ad3 {
+        width: 100% !important;
+    }
+
+    .elementor-49 .elementor-element.elementor-element-de87713,
+    .elementor-49 .elementor-element.elementor-element-91b1927,
+    .elementor-49 .elementor-element.elementor-element-69cb88e {
+        max-width: none;
+    }
+
+    .elementor-49 .contact-photo-pair img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .elementor-49 .elementor-element.elementor-element-de87713 .elementor-heading-title {
+        font-size: 32px !important;
+    }
+}
+
 .adl-blog-post .adl-blog-hero {
     padding: 84px 24px 36px;
 }
