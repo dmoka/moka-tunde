@@ -2684,6 +2684,71 @@ body {
     margin: 0;
 }
 
+.adl-reference-testimonial-sample {
+    background: linear-gradient(180deg, #FFFDF7 0%, #F7F2E7 100%);
+    padding: 0 24px 88px;
+}
+
+.adl-reference-testimonial-sample .elementor-container {
+    justify-content: center;
+}
+
+.adl-testimonial-sample-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(184, 154, 107, 0.32);
+    box-shadow: 0 22px 58px rgba(36, 54, 39, 0.08);
+    margin: 0 auto;
+    max-width: 860px;
+    padding: 38px 48px 34px;
+    position: relative;
+    text-align: center;
+}
+
+.adl-testimonial-sample-card::before {
+    background: #24472E;
+    content: "";
+    height: 3px;
+    left: 48px;
+    position: absolute;
+    right: 48px;
+    top: 0;
+}
+
+.adl-testimonial-sample-card__label {
+    color: #B89A6B;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+}
+
+.adl-testimonial-sample-card blockquote {
+    color: #263927;
+    font-family: "Inria Serif", serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.adl-testimonial-sample-card__name {
+    color: #24472E;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 22px 0 4px;
+}
+
+.adl-testimonial-sample-card__note {
+    color: #6D7868;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
 .adl-blog-readmore {
     align-self: center;
     margin: auto auto 0;
@@ -2718,6 +2783,10 @@ body {
         flex-direction: column;
     }
 
+    .adl-testimonial-sample-card {
+        padding: 34px 30px 31px;
+    }
+
     .adl-about-values__inner {
         grid-template-columns: 1fr;
     }
@@ -2736,8 +2805,26 @@ body {
 
     .adl-about-redesign,
     .adl-blog-index,
-    .adl-reference-sales {
+    .adl-reference-sales,
+    .adl-reference-testimonial-sample {
         padding: 58px 18px 68px;
+    }
+
+    .adl-reference-testimonial-sample {
+        padding-top: 0;
+    }
+
+    .adl-testimonial-sample-card {
+        padding: 32px 22px 28px;
+    }
+
+    .adl-testimonial-sample-card::before {
+        left: 22px;
+        right: 22px;
+    }
+
+    .adl-testimonial-sample-card blockquote {
+        font-size: 20px;
     }
 
     .adl-blog-card-grid {
