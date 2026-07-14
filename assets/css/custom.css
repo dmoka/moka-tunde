@@ -127,7 +127,7 @@ body {
     justify-content: center;
     justify-self: center;
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 390px;
     padding: 14px 16px;
 }
 
@@ -156,7 +156,7 @@ body {
 .footer-brand-pair__partner {
     align-items: center;
     display: inline-flex;
-    flex: 0 1 146px;
+    flex: 0 1 190px;
     flex-direction: column;
     gap: 8px;
     justify-content: center;
@@ -177,20 +177,21 @@ body {
 
 .footer-brand-pair__partner-mark {
     align-items: center;
-    background: #FFFDF8;
-    border: 1px solid rgba(184, 154, 107, 0.28);
-    box-shadow: 0 8px 20px rgba(48, 64, 46, 0.08);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(184, 154, 107, 0.2);
+    box-shadow: 0 8px 18px rgba(48, 64, 46, 0.06);
     display: inline-flex;
     justify-content: center;
-    padding: 8px 10px;
-    width: 136px;
+    padding: 10px 12px;
+    width: 186px;
 }
 
 .footer-brand-pair__partner-mark img {
     display: block;
     height: auto;
-    max-width: 116px;
+    max-width: 162px;
     object-fit: contain;
+    width: 162px !important;
 }
 
 .elementor-top-section {
@@ -2181,11 +2182,12 @@ body {
     }
 
     .footer-brand-pair__partner-mark {
-        width: 132px;
+        width: 186px;
     }
 
     .footer-brand-pair__partner-mark img {
-        max-width: 112px;
+        max-width: 162px;
+        width: 162px !important;
     }
 
     .adl-home-about__media {
