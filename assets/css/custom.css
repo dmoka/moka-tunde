@@ -2576,7 +2576,8 @@ body {
 }
 
 .adl-reference-sales .elementor-container {
-    gap: 34px;
+    align-items: stretch;
+    gap: 24px;
 }
 
 .adl-reference-sales .elementor-column {
@@ -2653,7 +2654,7 @@ body {
 .adl-reference-card h3 {
     color: #263927;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     line-height: 1.2;
     margin: 0 0 10px;
