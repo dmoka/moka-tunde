@@ -834,7 +834,7 @@ body {
 .adl-category-grid {
     display: grid;
     gap: 22px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -916,6 +916,85 @@ body {
 .adl-category-card:focus {
     border-color: rgba(111, 127, 86, 0.56);
     color: #30402E;
+}
+
+.adl-info-panel {
+    background: #FBF7EC;
+    padding: 24px 24px 76px;
+}
+
+.adl-info-panel__inner {
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.adl-info-panel__intro {
+    max-width: 780px;
+}
+
+.adl-info-panel h2 {
+    color: #30402E;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.12;
+    margin: 0 0 18px;
+}
+
+.adl-info-panel__intro p:not(.adl-highlight__eyebrow),
+.adl-info-panel__note {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.adl-info-panel__grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 34px;
+}
+
+.adl-info-panel article {
+    background: #FFFDF8;
+    border: 1px solid rgba(154, 169, 149, 0.16);
+    border-radius: 8px;
+    padding: 26px;
+}
+
+.adl-info-panel h3 {
+    color: #30402E;
+    font-family: "Red Hat Display", "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 14px;
+}
+
+.adl-info-panel ul {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.68;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.adl-info-panel li {
+    margin-bottom: 9px;
+}
+
+.adl-info-panel li:last-child {
+    margin-bottom: 0;
+}
+
+.adl-info-panel__note {
+    border-left: 3px solid #B89A6B;
+    margin-top: 26px;
+    max-width: 920px;
+    padding-left: 18px;
 }
 
 .contact-photo-pair {
@@ -1408,9 +1487,10 @@ body {
 }
 
 .adl-services-hero h1 {
-    font-size: clamp(42px, 5vw, 72px);
-    line-height: 1.02;
+    font-size: clamp(34px, 3.8vw, 56px);
+    line-height: 1.08;
     margin: 0 0 28px;
+    max-width: 620px;
 }
 
 .adl-services-hero__content p:not(.adl-section-label) {
@@ -1600,7 +1680,7 @@ body {
     }
 
     .adl-category-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .adl-home-focus__inner,
@@ -1644,6 +1724,23 @@ body {
 
     .adl-property-listings__grid {
         grid-template-columns: 1fr;
+    }
+
+    .adl-category-grid,
+    .adl-info-panel__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .adl-info-panel {
+        padding: 10px 18px 54px;
+    }
+
+    .adl-info-panel h2 {
+        font-size: 32px;
+    }
+
+    .adl-info-panel article {
+        padding: 22px;
     }
 
     .adl-property-card h2 {
@@ -1719,7 +1816,7 @@ body {
     }
 
     .adl-services-hero h1 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .adl-services-hero__media {
