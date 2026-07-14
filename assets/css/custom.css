@@ -2246,7 +2246,8 @@ body {
 .adl-about-closing a,
 .adl-blog-readmore {
     align-items: center;
-    background: #B89A6B;
+    background: #30402E;
+    border: 1px solid rgba(216, 191, 130, 0.58);
     color: #FFFFFF !important;
     display: inline-flex;
     font-family: "Montserrat", sans-serif;
@@ -2262,7 +2263,7 @@ body {
 
 .adl-about-closing a:hover,
 .adl-blog-readmore:hover {
-    background: #9A7B50;
+    background: #6F7F56;
     transform: translateY(-2px);
 }
 
@@ -2299,10 +2300,10 @@ body {
 
 .adl-blog-card-grid {
     display: grid;
-    gap: 26px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin: 0 auto;
-    max-width: 1180px;
+    max-width: 1240px;
 }
 
 .adl-blog-card {
@@ -2331,11 +2332,20 @@ body {
     transform: scale(1.035);
 }
 
+.adl-blog-card:nth-child(4) .adl-blog-card__image img {
+    transform: scale(1.14);
+    transform-origin: center 38%;
+}
+
+.adl-blog-card:nth-child(4):hover .adl-blog-card__image img {
+    transform: scale(1.18);
+}
+
 .adl-blog-card__body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 30px;
+    padding: 25px 24px 27px;
 }
 
 .adl-blog-card__body span {
@@ -2350,8 +2360,8 @@ body {
 }
 
 .adl-blog-index h2 {
-    font-size: 30px;
-    line-height: 1.12;
+    font-size: 24px;
+    line-height: 1.14;
     margin: 0 0 16px;
 }
 
@@ -2363,21 +2373,25 @@ body {
 .adl-blog-card__body p {
     color: #52634F;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.65;
     margin: 0;
 }
 
 .adl-blog-readmore {
-    margin-top: auto;
-    padding-top: 28px;
+    align-self: center;
+    margin: auto auto 0;
+    padding: 0 24px;
 }
 
 @media (max-width: 1024px) {
     .adl-about-redesign__inner,
-    .adl-about-closing,
-    .adl-blog-card-grid {
+    .adl-about-closing {
         grid-template-columns: 1fr;
+    }
+
+    .adl-blog-card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .adl-about-values__inner {
@@ -2399,6 +2413,10 @@ body {
     .adl-about-redesign,
     .adl-blog-index {
         padding: 58px 18px 68px;
+    }
+
+    .adl-blog-card-grid {
+        grid-template-columns: 1fr;
     }
 
     .adl-about-redesign__media {
@@ -2437,7 +2455,7 @@ body {
 
     .adl-about-closing h2,
     .adl-blog-index h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .adl-about-closing a,
