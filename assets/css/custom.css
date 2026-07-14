@@ -1374,6 +1374,27 @@ body {
     color: #6F7F56;
 }
 
+.adl-blog-post .adl-blog-inline-cta {
+    border-left: 3px solid #BFA45A;
+    margin: 36px 0 0;
+    padding: 18px 0 18px 22px;
+}
+
+.adl-blog-post .adl-blog-inline-cta a {
+    color: #30402E;
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration-color: rgba(111, 127, 86, 0.45);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.adl-blog-post .adl-blog-inline-cta a:hover {
+    color: #6F7F56;
+}
+
 .adl-section-label {
     color: #8A6F4D;
     font-family: "Montserrat", sans-serif;
@@ -1948,6 +1969,15 @@ body {
 
     .adl-blog-post .adl-blog-content h2 {
         font-size: 27px;
+    }
+
+    .adl-blog-post .adl-blog-inline-cta {
+        margin-top: 28px;
+        padding-left: 18px;
+    }
+
+    .adl-blog-post .adl-blog-inline-cta a {
+        font-size: 21px;
     }
 
     .adl-home-focus,
