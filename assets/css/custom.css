@@ -177,7 +177,9 @@ body {
 
 .footer-brand-pair__partner-mark {
     align-items: center;
-    background: #30402E;
+    background: #FFFDF8;
+    border: 1px solid rgba(184, 154, 107, 0.28);
+    box-shadow: 0 8px 20px rgba(48, 64, 46, 0.08);
     display: inline-flex;
     justify-content: center;
     padding: 8px 10px;
