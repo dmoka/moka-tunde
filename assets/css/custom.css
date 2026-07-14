@@ -124,6 +124,47 @@ body {
     object-fit: contain;
 }
 
+.elementor-location-footer .adl-footer-office {
+    background: #F6F0E3 !important;
+    border-top: 1px solid rgba(154, 169, 149, 0.28);
+    padding: 20px 24px 18px;
+}
+
+.adl-footer-office__inner {
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.adl-footer-office__inner p {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.adl-footer-office__logo {
+    align-items: center;
+    background: #30402E;
+    display: inline-flex;
+    justify-content: center;
+    padding: 9px 13px;
+}
+
+.adl-footer-office__logo img {
+    display: block;
+    height: auto;
+    max-width: 168px;
+    object-fit: contain;
+}
+
 .elementor-top-section {
     background-color: #F6F0E3 !important;
 }
@@ -2087,6 +2128,24 @@ body {
 
     .adl-home-office__logo img {
         max-width: 250px;
+    }
+
+    .adl-footer-office {
+        padding: 18px 18px 16px;
+    }
+
+    .adl-footer-office__inner {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .adl-footer-office__logo {
+        padding: 8px 11px;
+    }
+
+    .adl-footer-office__logo img {
+        max-width: 142px;
     }
 
     .adl-home-about__media {
