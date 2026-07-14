@@ -2400,6 +2400,7 @@ body {
 
 .adl-reference-card figure {
     margin: 0;
+    position: relative;
 }
 
 .adl-reference-card img {
@@ -2416,6 +2417,24 @@ body {
     font-size: 13px;
     line-height: 1.5;
     padding: 12px 22px 0;
+}
+
+.adl-reference-card__ribbon {
+    background: linear-gradient(135deg, #24472E 0%, #355D3C 100%);
+    box-shadow: 0 8px 18px rgba(23, 44, 27, 0.2);
+    color: #F6F1E7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    padding: 9px 40px;
+    position: absolute;
+    right: -38px;
+    text-transform: uppercase;
+    top: 22px;
+    transform: rotate(36deg);
+    z-index: 2;
 }
 
 .adl-reference-card__body {
