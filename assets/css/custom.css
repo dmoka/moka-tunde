@@ -1420,6 +1420,21 @@ body {
     text-align: right;
 }
 
+.adl-blog-post .adl-photo-credit a,
+.adl-reference-card figcaption a {
+    color: #24472E;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgba(184, 154, 107, 0.75);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.adl-blog-post .adl-photo-credit a:hover,
+.adl-reference-card figcaption a:hover {
+    color: #B89A6B;
+}
+
 .adl-blog-post .adl-blog-content {
     padding: 28px 24px 88px;
 }
