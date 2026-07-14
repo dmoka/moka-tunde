@@ -1458,13 +1458,13 @@ body {
 .adl-services-matrix {
     display: grid;
     gap: 1px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     padding-bottom: 88px;
 }
 
 .adl-service-tile {
     background: #F7F1E5;
-    min-height: 260px;
+    min-height: 330px;
     padding: 32px;
 }
 
@@ -1494,6 +1494,19 @@ body {
     font-size: 15px;
     line-height: 1.7;
     margin: 0;
+}
+
+.adl-service-tile ul {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 18px 0 0;
+    padding-left: 18px;
+}
+
+.adl-service-tile li {
+    margin: 0 0 8px;
 }
 
 .adl-services-flow {
