@@ -1487,10 +1487,11 @@ body {
 }
 
 .adl-services-hero h1 {
-    font-size: clamp(34px, 3.8vw, 56px);
-    line-height: 1.08;
-    margin: 0 0 28px;
-    max-width: 620px;
+    font-size: clamp(30px, 3.05vw, 46px);
+    line-height: 1.16;
+    margin: 0 0 24px;
+    max-width: 680px;
+    text-wrap: balance;
 }
 
 .adl-services-hero__content p:not(.adl-section-label) {
@@ -1816,7 +1817,8 @@ body {
     }
 
     .adl-services-hero h1 {
-        font-size: 34px;
+        font-size: 30px;
+        line-height: 1.2;
     }
 
     .adl-services-hero__media {
