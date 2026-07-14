@@ -2400,6 +2400,7 @@ body {
 
 .adl-reference-card figure {
     margin: 0;
+    overflow: hidden;
     position: relative;
 }
 
@@ -2420,20 +2421,25 @@ body {
 }
 
 .adl-reference-card__ribbon {
-    background: linear-gradient(135deg, #24472E 0%, #355D3C 100%);
-    box-shadow: 0 8px 18px rgba(23, 44, 27, 0.2);
-    color: #F6F1E7;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(36, 71, 46, 0.96) 0%, rgba(54, 94, 61, 0.96) 100%);
+    box-shadow: 0 7px 18px rgba(18, 37, 23, 0.2);
+    color: #FFF8EA;
+    display: flex;
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.14em;
-    line-height: 1;
-    padding: 9px 40px;
+    height: 38px;
+    justify-content: center;
+    letter-spacing: 0.16em;
+    line-height: 1.1;
     position: absolute;
-    right: -38px;
+    right: -58px;
     text-transform: uppercase;
-    top: 22px;
-    transform: rotate(36deg);
+    top: 34px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    width: 218px;
     z-index: 2;
 }
 
