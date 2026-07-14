@@ -1554,6 +1554,72 @@ body {
     transform: translateY(-2px);
 }
 
+.adl-home-office {
+    background:
+        linear-gradient(135deg, rgba(255, 253, 248, 0.96), rgba(247, 241, 229, 0.72)),
+        #FFFDF8;
+    color: #263927;
+    padding: 72px 24px 78px;
+}
+
+.adl-home-office__inner {
+    align-items: center;
+    border: 1px solid rgba(184, 154, 107, 0.42);
+    display: grid;
+    gap: clamp(28px, 5vw, 64px);
+    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: clamp(28px, 4.5vw, 52px);
+    position: relative;
+}
+
+.adl-home-office__inner::before {
+    background: #30402E;
+    content: "";
+    height: 3px;
+    left: clamp(28px, 4.5vw, 52px);
+    position: absolute;
+    top: 0;
+    width: 96px;
+}
+
+.adl-home-office h2 {
+    color: #30402E;
+    font-family: "Inria Serif", "Playfair Display", serif;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.16;
+    margin: 0 0 18px;
+    text-wrap: balance;
+}
+
+.adl-home-office p:not(.adl-section-label) {
+    color: #52634F;
+    font-family: "Poppins", "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.72;
+    margin: 0;
+    max-width: 620px;
+}
+
+.adl-home-office__logo {
+    align-items: center;
+    background: #30402E;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+    display: flex;
+    justify-content: center;
+    min-height: 168px;
+    padding: 24px;
+}
+
+.adl-home-office__logo img {
+    display: block;
+    height: auto;
+    max-width: min(260px, 100%);
+}
+
 .adl-home-cta {
     background: #263927;
     color: #FFFFFF;
@@ -1849,6 +1915,7 @@ body {
 
     .adl-home-focus__inner,
     .adl-home-about__inner,
+    .adl-home-office__inner,
     .adl-home-cta__inner,
     .adl-services-hero,
     .adl-services-intro,
@@ -1981,6 +2048,7 @@ body {
     }
 
     .adl-home-focus,
+    .adl-home-office,
     .adl-home-cta,
     .adl-services-intro,
     .adl-services-flow,
@@ -1998,6 +2066,29 @@ body {
         padding: 58px 18px 64px;
     }
 
+    .adl-home-office {
+        padding-bottom: 60px;
+        padding-top: 56px;
+    }
+
+    .adl-home-office__inner {
+        padding: 28px 22px;
+    }
+
+    .adl-home-office__inner::before {
+        left: 22px;
+        width: 72px;
+    }
+
+    .adl-home-office__logo {
+        min-height: 128px;
+        padding: 18px;
+    }
+
+    .adl-home-office__logo img {
+        max-width: 210px;
+    }
+
     .adl-home-about__media {
         aspect-ratio: 4 / 3.25;
     }
@@ -2008,6 +2099,7 @@ body {
 
     .adl-home-focus__copy h2,
     .adl-home-about h2,
+    .adl-home-office h2,
     .adl-services-intro h2,
     .adl-services-flow h2,
     .adl-services-proof h2 {
