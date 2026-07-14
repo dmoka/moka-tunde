@@ -2378,6 +2378,77 @@ body {
     margin: 0;
 }
 
+.adl-reference-sales {
+    padding: 26px 24px 82px;
+}
+
+.adl-reference-sales .elementor-container {
+    gap: 34px;
+}
+
+.adl-reference-sales .elementor-column {
+    flex: 1;
+}
+
+.adl-reference-card {
+    background: #fff;
+    border: 1px solid rgba(184, 154, 107, 0.28);
+    box-shadow: 0 18px 48px rgba(36, 54, 39, 0.08);
+    height: 100%;
+    overflow: hidden;
+}
+
+.adl-reference-card figure {
+    margin: 0;
+}
+
+.adl-reference-card img {
+    aspect-ratio: 4 / 3;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.adl-reference-card figcaption {
+    color: #6D7868;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 12px 22px 0;
+}
+
+.adl-reference-card__body {
+    padding: 18px 22px 26px;
+}
+
+.adl-reference-card__status {
+    color: #B89A6B;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.adl-reference-card h3 {
+    color: #263927;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.adl-reference-card__body p:last-child {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    margin: 0;
+}
+
 .adl-blog-readmore {
     align-self: center;
     margin: auto auto 0;
@@ -2392,6 +2463,10 @@ body {
 
     .adl-blog-card-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .adl-reference-sales .elementor-container {
+        flex-direction: column;
     }
 
     .adl-about-values__inner {
@@ -2411,7 +2486,8 @@ body {
     }
 
     .adl-about-redesign,
-    .adl-blog-index {
+    .adl-blog-index,
+    .adl-reference-sales {
         padding: 58px 18px 68px;
     }
 
