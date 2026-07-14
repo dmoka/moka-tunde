@@ -118,50 +118,76 @@ body {
     object-fit: contain;
 }
 
-.elementor-location-footer .elementor-element-3fce8b0 img {
-    width: min(168px, 56vw) !important;
-    height: auto;
-    object-fit: contain;
-}
-
-.elementor-location-footer .adl-footer-office {
-    background: #F6F0E3 !important;
-    border-top: 1px solid rgba(154, 169, 149, 0.28);
-    padding: 20px 24px 18px;
-}
-
-.adl-footer-office__inner {
+.footer-brand-pair {
     align-items: center;
+    background: rgba(255, 253, 248, 0.52);
+    border: 1px solid rgba(154, 169, 149, 0.22);
     display: flex;
-    gap: 18px;
+    gap: 16px;
     justify-content: center;
+    justify-self: center;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 360px;
+    padding: 14px 16px;
 }
 
-.adl-footer-office__inner p {
+.footer-brand-pair__primary {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    justify-content: center;
+}
+
+.footer-brand-pair__primary img {
+    display: block;
+    height: auto;
+    max-height: 136px;
+    object-fit: contain;
+    width: min(142px, 34vw) !important;
+}
+
+.footer-brand-pair__divider {
+    align-self: stretch;
+    background: linear-gradient(180deg, rgba(184, 154, 107, 0), rgba(184, 154, 107, 0.62), rgba(184, 154, 107, 0));
+    flex: 0 0 1px;
+    min-height: 92px;
+}
+
+.footer-brand-pair__partner {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 1 146px;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    min-width: 0;
+    text-align: center;
+}
+
+.footer-brand-pair__caption {
     color: #52634F;
+    display: block;
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
-    letter-spacing: 0.08em;
-    line-height: 1.4;
-    margin: 0;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
     text-transform: uppercase;
 }
 
-.adl-footer-office__logo {
+.footer-brand-pair__partner-mark {
     align-items: center;
     background: #30402E;
     display: inline-flex;
     justify-content: center;
-    padding: 9px 13px;
+    padding: 8px 10px;
+    width: 136px;
 }
 
-.adl-footer-office__logo img {
+.footer-brand-pair__partner-mark img {
     display: block;
     height: auto;
-    max-width: 168px;
+    max-width: 116px;
     object-fit: contain;
 }
 
@@ -2130,22 +2156,34 @@ body {
         max-width: 250px;
     }
 
-    .adl-footer-office {
-        padding: 18px 18px 16px;
-    }
-
-    .adl-footer-office__inner {
+    .footer-brand-pair {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        gap: 12px;
+        max-width: 250px;
+        padding: 16px 14px;
     }
 
-    .adl-footer-office__logo {
-        padding: 8px 11px;
+    .footer-brand-pair__primary img {
+        width: min(134px, 58vw) !important;
     }
 
-    .adl-footer-office__logo img {
-        max-width: 142px;
+    .footer-brand-pair__divider {
+        background: linear-gradient(90deg, rgba(184, 154, 107, 0), rgba(184, 154, 107, 0.62), rgba(184, 154, 107, 0));
+        min-height: 1px;
+        width: 132px;
+    }
+
+    .footer-brand-pair__partner {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .footer-brand-pair__partner-mark {
+        width: 132px;
+    }
+
+    .footer-brand-pair__partner-mark img {
+        max-width: 112px;
     }
 
     .adl-home-about__media {
