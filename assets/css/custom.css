@@ -2702,12 +2702,17 @@ body {
     align-items: stretch;
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .adl-reference-sales .elementor-column {
+    grid-column: span 4;
     width: auto !important;
     min-width: 0;
+}
+
+.adl-reference-sales .elementor-column:nth-child(-n+2) {
+    grid-column: span 6;
 }
 
 .adl-reference-card {
@@ -2730,6 +2735,10 @@ body {
     height: auto;
     object-fit: cover;
     width: 100%;
+}
+
+.adl-reference-sales .elementor-column:nth-child(-n+2) .adl-reference-card img {
+    aspect-ratio: 16 / 10;
 }
 
 .adl-reference-card figcaption {
@@ -2897,6 +2906,22 @@ body {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .adl-reference-sales .elementor-column,
+    .adl-reference-sales .elementor-column:nth-child(-n+2) {
+        grid-column: auto;
+    }
+
+    .adl-reference-sales .elementor-column:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: calc(50% - 12px);
+        width: 100% !important;
+    }
+
+    .adl-reference-sales .elementor-column:nth-child(-n+2) .adl-reference-card img {
+        aspect-ratio: 4 / 3;
+    }
+
     .adl-testimonial-sample-card {
         padding: 34px 30px 31px;
     }
@@ -2930,6 +2955,12 @@ body {
 
     .adl-reference-sales .elementor-container {
         grid-template-columns: 1fr;
+    }
+
+    .adl-reference-sales .elementor-column:last-child {
+        grid-column: auto;
+        justify-self: stretch;
+        max-width: none;
     }
 
     .adl-testimonial-sample-card {
