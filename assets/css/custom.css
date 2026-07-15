@@ -2574,15 +2574,22 @@ body {
 }
 
 .adl-blog-index h1 {
-    font-size: clamp(38px, 4.6vw, 64px);
-    line-height: 1.04;
-    margin: 0 0 22px;
-    max-width: 820px;
+    color: #2E3D2C;
+    font-family: "Playfair Display", "Roboto Slab", serif;
+    font-size: clamp(32px, 3.2vw, 46px);
+    font-weight: 500;
+    line-height: 1.14;
+    margin: 0 0 18px;
+    max-width: 720px;
     text-wrap: balance;
 }
 
 .adl-blog-index__header p:not(.adl-section-label) {
-    max-width: 660px;
+    color: #53634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 620px;
 }
 
 .adl-blog-card-grid {
@@ -2941,7 +2948,7 @@ body {
 
     .adl-about-redesign h1,
     .adl-blog-index h1 {
-        font-size: 30px;
+        font-size: 29px;
     }
 
     .adl-about-redesign__lead {
