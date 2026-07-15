@@ -2700,11 +2700,14 @@ body {
 
 .adl-reference-sales .elementor-container {
     align-items: stretch;
+    display: grid;
     gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .adl-reference-sales .elementor-column {
-    flex: 1;
+    width: auto !important;
+    min-width: 0;
 }
 
 .adl-reference-card {
@@ -2777,7 +2780,7 @@ body {
 .adl-reference-card h3 {
     color: #263927;
     font-family: "Red Hat Display", sans-serif;
-    font-size: 23px;
+    font-size: clamp(20px, 1.6vw, 23px);
     font-weight: 600;
     line-height: 1.2;
     margin: 0 0 10px;
@@ -2891,7 +2894,7 @@ body {
     }
 
     .adl-reference-sales .elementor-container {
-        flex-direction: column;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .adl-testimonial-sample-card {
@@ -2923,6 +2926,10 @@ body {
 
     .adl-reference-testimonial-sample {
         padding-top: 0;
+    }
+
+    .adl-reference-sales .elementor-container {
+        grid-template-columns: 1fr;
     }
 
     .adl-testimonial-sample-card {
