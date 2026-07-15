@@ -933,10 +933,15 @@ body {
 .adl-property-card h2 {
     color: #30402E;
     font-family: "Playfair Display", serif;
-    font-size: 23px;
+    display: -webkit-box;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 1.25;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.22;
     margin: 0;
+    min-height: calc(1.22em * 3);
+    overflow: hidden;
 }
 
 .adl-property-card__price {
@@ -2094,7 +2099,7 @@ body {
     }
 
     .adl-property-card h2 {
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .adl-blog-post .adl-blog-hero {
