@@ -1478,6 +1478,10 @@ body {
     line-height: 1.85;
 }
 
+.adl-blog-post .adl-blog-content p:not(.adl-blog-inline-cta) {
+    text-align: justify;
+}
+
 .adl-blog-post .adl-blog-content h2 {
     color: #30402E;
     font-family: "Playfair Display", serif;
