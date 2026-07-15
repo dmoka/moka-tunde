@@ -897,7 +897,7 @@ body {
     width: 100%;
 }
 
-.adl-property-card__media span {
+.adl-property-card__media > span:not(.adl-property-card__video-badge) {
     background: rgba(154, 169, 149, 0.9);
     color: #fff;
     font-family: "Montserrat", sans-serif;
@@ -908,6 +908,33 @@ body {
     position: absolute;
     text-transform: uppercase;
     top: 14px;
+}
+
+.adl-property-card__video-badge {
+    align-items: center;
+    background: rgba(48, 64, 46, 0.88);
+    color: #FFFDF8;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    gap: 7px;
+    letter-spacing: 0;
+    padding: 8px 11px;
+    position: absolute;
+    right: 14px;
+    text-transform: uppercase;
+    top: 14px;
+}
+
+.adl-property-card__video-badge::before {
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid currentColor;
+    border-top: 5px solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    width: 0;
 }
 
 .adl-property-card:hover .adl-property-card__media img {
