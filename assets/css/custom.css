@@ -116,9 +116,18 @@ body {
         background: #FFFDF8 !important;
         border: 1px solid rgba(184, 154, 107, 0.28);
         box-shadow: 0 18px 42px rgba(38, 57, 39, 0.16);
+        display: none !important;
+        left: 0;
         padding: 10px 0;
+        position: absolute;
+        top: 100%;
         width: 330px !important;
         z-index: 20 !important;
+    }
+
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children:hover > .sub-menu,
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children:focus-within > .sub-menu {
+        display: block !important;
     }
 
     .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu > li {
@@ -165,6 +174,20 @@ body {
 }
 
 @media (max-width: 767px) {
+    .elementor-location-header .elementor-nav-menu--dropdown .menu-item-1100 > .sub-menu {
+        background: rgba(48, 64, 46, 0.1) !important;
+        display: block !important;
+        margin: 0 0 6px;
+        padding: 0 0 6px 14px;
+        position: static;
+    }
+
+    .elementor-location-header .elementor-nav-menu--dropdown .menu-item-1100 > .sub-menu .elementor-sub-item {
+        font-size: 13px;
+        padding-bottom: 9px;
+        padding-top: 9px;
+    }
+
     .adl-header-social {
         gap: 6px;
     }
