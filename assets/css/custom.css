@@ -2823,6 +2823,10 @@ body {
     text-align: center;
 }
 
+.adl-testimonial-sample-card + .adl-testimonial-sample-card {
+    margin-top: 28px;
+}
+
 .adl-testimonial-sample-card::before {
     background: #24472E;
     content: "";
