@@ -97,7 +97,22 @@ body {
 }
 
 @media (min-width: 1025px) {
-    .elementor-location-header .elementor-nav-menu--main .menu-item-1100 > .sub-menu {
+    .elementor-location-header .elementor-element-3a93f7ef {
+        --e-nav-menu-horizontal-menu-item-margin: 16px !important;
+    }
+
+    .elementor-location-header .elementor-element-3a93f7ef .elementor-nav-menu--main .elementor-nav-menu {
+        align-items: center;
+        column-gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .elementor-location-header .elementor-element-3a93f7ef .elementor-nav-menu--main .elementor-item {
+        font-size: 12.5px !important;
+        white-space: nowrap;
+    }
+
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu {
         background: #FFFDF8 !important;
         border: 1px solid rgba(184, 154, 107, 0.28);
         box-shadow: 0 18px 42px rgba(38, 57, 39, 0.16);
@@ -106,17 +121,17 @@ body {
         z-index: 20 !important;
     }
 
-    .elementor-location-header .elementor-nav-menu--main .menu-item-1100 > .sub-menu > li {
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu > li {
         float: none;
         padding: 0 14px;
         width: 100%;
     }
 
-    .elementor-location-header .elementor-nav-menu--main .menu-item-1100 > .sub-menu > li + li > a {
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu > li + li > a {
         border-top: 1px solid rgba(154, 169, 149, 0.18);
     }
 
-    .elementor-location-header .elementor-nav-menu--main .menu-item-1100 > .sub-menu > li > a {
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu > li > a {
         background: transparent !important;
         border: 0;
         color: #30402E !important;
@@ -135,8 +150,8 @@ body {
         white-space: normal !important;
     }
 
-    .elementor-location-header .elementor-nav-menu--main .menu-item-1100 > .sub-menu > li > a:hover,
-    .elementor-location-header .elementor-nav-menu--main .menu-item-1100 > .sub-menu > li > a:focus {
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu > li > a:hover,
+    .elementor-location-header .elementor-nav-menu--main .menu-item-has-children > .sub-menu > li > a:focus {
         background: rgba(246, 240, 227, 0.72) !important;
         color: #30402E !important;
         padding-left: 20px !important;
@@ -2909,10 +2924,202 @@ body {
     padding: 0 24px;
 }
 
+.adl-magazine-page {
+    background: #FFFDF7;
+    color: #263927;
+}
+
+.adl-magazine-hero {
+    align-items: center;
+    display: grid;
+    gap: 54px;
+    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.55fr);
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 86px 24px 72px;
+}
+
+.adl-magazine-hero__copy h1 {
+    color: #24472E;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.08;
+    margin: 0 0 20px;
+}
+
+.adl-magazine-hero__copy p:not(.adl-section-label) {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+    margin: 0 0 28px;
+    max-width: 620px;
+}
+
+.adl-magazine-hero__cover {
+    justify-self: center;
+    max-width: 310px;
+    position: relative;
+}
+
+.adl-magazine-hero__cover::before {
+    background: #D8BF82;
+    content: "";
+    inset: 18px -18px -18px 18px;
+    position: absolute;
+    z-index: 0;
+}
+
+.adl-magazine-hero__cover img,
+.adl-magazine-card img {
+    box-shadow: 0 22px 50px rgba(36, 54, 39, 0.16);
+    display: block;
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.adl-magazine-button,
+.adl-magazine-card a {
+    align-items: center;
+    background: #24472E;
+    color: #FFFFFF;
+    display: inline-flex;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    letter-spacing: 0.08em;
+    min-height: 44px;
+    padding: 0 22px;
+    text-transform: uppercase;
+}
+
+.adl-magazine-button:hover,
+.adl-magazine-card a:hover {
+    background: #B89A6B;
+    color: #FFFFFF;
+}
+
+.adl-magazine-feature {
+    background: #F7F2E7;
+    padding: 76px 24px 86px;
+    text-align: center;
+}
+
+.adl-magazine-feature__heading {
+    margin: 0 auto 34px;
+    max-width: 820px;
+}
+
+.adl-magazine-feature__heading span,
+.adl-magazine-card span {
+    color: #B89A6B;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.adl-magazine-feature__heading h2,
+.adl-magazine-archive h2 {
+    color: #24472E;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 14px;
+}
+
+.adl-magazine-feature__heading p {
+    color: #52634F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.adl-magazine-embed {
+    background: #FFFFFF;
+    box-shadow: 0 18px 48px rgba(36, 54, 39, 0.12);
+    margin: 0 auto 28px;
+    max-width: 1100px;
+    overflow: hidden;
+    padding-top: min(72vh, 760px);
+    position: relative;
+}
+
+.adl-magazine-embed iframe {
+    border: 0;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.adl-magazine-button--secondary {
+    background: #B89A6B;
+}
+
+.adl-magazine-button--secondary:hover {
+    background: #24472E;
+}
+
+.adl-magazine-archive {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 76px 24px 90px;
+}
+
+.adl-magazine-archive__heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.adl-magazine-grid {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.adl-magazine-card {
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(184, 154, 107, 0.28);
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 150px minmax(0, 1fr);
+    padding: 24px;
+}
+
+.adl-magazine-card h3 {
+    color: #24472E;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 18px;
+}
+
 @media (max-width: 1024px) {
     .adl-about-redesign__inner,
-    .adl-about-closing {
+    .adl-about-closing,
+    .adl-magazine-hero {
         grid-template-columns: 1fr;
+    }
+
+    .adl-magazine-hero {
+        text-align: center;
+    }
+
+    .adl-magazine-hero__copy p:not(.adl-section-label) {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .adl-blog-card-grid {
@@ -2980,7 +3187,10 @@ body {
     .adl-about-redesign,
     .adl-blog-index,
     .adl-reference-sales,
-    .adl-reference-testimonial-sample {
+    .adl-reference-testimonial-sample,
+    .adl-magazine-hero,
+    .adl-magazine-feature,
+    .adl-magazine-archive {
         padding: 58px 18px 68px;
     }
 
@@ -3020,7 +3230,8 @@ body {
     }
 
     .adl-about-redesign h1,
-    .adl-blog-index h1 {
+    .adl-blog-index h1,
+    .adl-magazine-hero__copy h1 {
         font-size: 29px;
     }
 
@@ -3050,13 +3261,35 @@ body {
     }
 
     .adl-about-closing h2,
-    .adl-blog-index h2 {
+    .adl-blog-index h2,
+    .adl-magazine-feature__heading h2,
+    .adl-magazine-archive h2 {
         font-size: 25px;
     }
 
     .adl-about-closing a,
-    .adl-blog-readmore {
+    .adl-blog-readmore,
+    .adl-magazine-button,
+    .adl-magazine-card a {
         width: 100%;
+    }
+
+    .adl-magazine-grid,
+    .adl-magazine-card {
+        grid-template-columns: 1fr;
+    }
+
+    .adl-magazine-embed {
+        background: #FFFFFF url("/assets/images/2026/07/adl-magazin-2026-nyar.jpg") center / contain no-repeat;
+        padding-top: 125%;
+    }
+
+    .adl-magazine-embed iframe {
+        display: none;
+    }
+
+    .adl-magazine-card img {
+        max-width: 220px;
     }
 
     .adl-blog-feature {
