@@ -1223,6 +1223,7 @@ body {
 
 .adl-category-card.adl-category-card--with-image strong {
     color: #30402E;
+    margin-top: 24px;
     text-shadow: none;
 }
 
