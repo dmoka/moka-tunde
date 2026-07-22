@@ -61,6 +61,15 @@ body {
     color: #9AA995 !important;
 }
 
+.elementor-location-footer .elementor-element-5654cb1 .elementor-widget-wrap {
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.elementor-location-footer .elementor-element-5654cb1 .elementor-social-icons-wrapper {
+    justify-content: flex-start;
+}
+
 .elementor-location-header .elementor-nav-menu--dropdown {
     background-color: #9AA995 !important;
 }
