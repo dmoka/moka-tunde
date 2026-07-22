@@ -35,7 +35,7 @@
         }
 
         const images = [
-            "/assets/images/2026/07/sajat/budapest-duna-varos-1532.jpg",
+            "/assets/images/2026/07/nyari-uborkaszezon-ingatlanpiac-hero.jpg",
             "/assets/images/2026/07/sajat/tunde-jozsef-attila-10.jpg",
             "/assets/images/2026/07/sajat/szines-nappali-1800.jpg",
             "/assets/images/2026/07/sajat/teraszos-hangulat-1684.jpg",
