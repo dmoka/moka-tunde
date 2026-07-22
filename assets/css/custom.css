@@ -177,8 +177,8 @@ body {
 }
 
 .elementor-location-header .elementor-widget-theme-site-logo img {
-    width: clamp(114px, 11vw, 158px) !important;
-    max-height: 148px;
+    width: clamp(96px, 9vw, 132px) !important;
+    max-height: 124px;
     object-fit: contain;
 }
 
@@ -231,9 +231,9 @@ body {
 .footer-brand-pair__primary img {
     display: block;
     height: auto;
-    max-height: 136px;
+    max-height: 118px;
     object-fit: contain;
-    width: min(142px, 34vw) !important;
+    width: min(122px, 30vw) !important;
 }
 
 .footer-brand-pair__divider {
@@ -2449,7 +2449,7 @@ body {
     }
 
     .footer-brand-pair__primary img {
-        width: min(134px, 58vw) !important;
+        width: min(116px, 54vw) !important;
     }
 
     .footer-brand-pair__divider {
