@@ -968,7 +968,9 @@ body {
 }
 
 .adl-listing-page__lead a[href^="mailto:"] {
-    white-space: nowrap;
+    overflow-wrap: normal !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
 }
 
 .adl-listing-page__button {
@@ -1553,6 +1555,13 @@ body {
     font-weight: 500;
     line-height: 1.18;
     overflow-wrap: anywhere;
+}
+
+.elementor-49 .adl-contact-direct__item[href^="mailto:"] strong {
+    font-size: clamp(17px, 2.2vw, 32px);
+    overflow-wrap: normal !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
 }
 
 .elementor-49 .adl-contact-direct__item:hover strong,
