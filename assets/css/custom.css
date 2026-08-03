@@ -967,6 +967,10 @@ body {
     max-width: 680px;
 }
 
+.adl-listing-page__lead a[href^="mailto:"] {
+    white-space: nowrap;
+}
+
 .adl-listing-page__button {
     background: #9AA995;
     color: #fff;
