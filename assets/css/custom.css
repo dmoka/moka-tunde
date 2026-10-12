@@ -74,6 +74,16 @@ body {
     background-color: #9AA995 !important;
 }
 
+@media (max-width: 1024px) {
+    .elementor-location-header .elementor-nav-menu--dropdown a:hover,
+    .elementor-location-header .elementor-nav-menu--dropdown a:focus,
+    .elementor-location-header .elementor-nav-menu--dropdown a.elementor-item-active,
+    .elementor-location-header .elementor-nav-menu--dropdown a.highlighted {
+        background-color: #758A75 !important;
+        color: #fff !important;
+    }
+}
+
 .adl-header-social {
     align-items: center;
     display: flex;
