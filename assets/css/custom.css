@@ -1708,6 +1708,10 @@ body {
     width: 100%;
 }
 
+.adl-blog-post .adl-blog-hero-image--framed {
+    object-fit: contain;
+}
+
 .adl-blog-post .adl-photo-credit {
     color: #6F7F56;
     font-family: "Montserrat", sans-serif;
@@ -2895,6 +2899,19 @@ body {
 
 .adl-blog-card:first-child .adl-blog-card__image {
     aspect-ratio: 16 / 8.6;
+}
+
+.adl-blog-card:first-child.adl-blog-card--framed .adl-blog-card__image {
+    aspect-ratio: 16 / 9;
+    background: #214437;
+}
+
+.adl-blog-card--framed .adl-blog-card__image img {
+    object-fit: contain;
+}
+
+.adl-blog-card--framed:hover .adl-blog-card__image img {
+    transform: none;
 }
 
 .adl-blog-card--home-staging .adl-blog-card__image img,
