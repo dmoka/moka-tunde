@@ -3533,3 +3533,10 @@ body {
         font-size: 24px;
     }
 }
+
+/* A Wekerle Plusz új cikkének 4:3-as fotója teljesen látszódjon. */
+.adl-blog-post .adl-blog-hero-image--uncropped { aspect-ratio: 4 / 3; object-fit: contain; }
+.adl-blog-card--uncropped .adl-blog-card__image,
+.adl-blog-card:first-child.adl-blog-card--uncropped .adl-blog-card__image { aspect-ratio: 4 / 3; }
+.adl-blog-card--uncropped .adl-blog-card__image img { object-fit: contain; }
+.adl-blog-card--uncropped:hover .adl-blog-card__image img { transform: none; }
