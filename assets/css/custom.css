@@ -2982,6 +2982,10 @@ body {
     grid-column: span 6;
 }
 
+.adl-reference-sales .elementor-column:nth-child(n+3) {
+    grid-column: span 3;
+}
+
 .adl-reference-card {
     background: #fff;
     border: 1px solid rgba(184, 154, 107, 0.28);
@@ -3370,15 +3374,9 @@ body {
     }
 
     .adl-reference-sales .elementor-column,
-    .adl-reference-sales .elementor-column:nth-child(-n+2) {
+    .adl-reference-sales .elementor-column:nth-child(-n+2),
+    .adl-reference-sales .elementor-column:nth-child(n+3) {
         grid-column: auto;
-    }
-
-    .adl-reference-sales .elementor-column:last-child {
-        grid-column: 1 / -1;
-        justify-self: center;
-        max-width: calc(50% - 12px);
-        width: 100% !important;
     }
 
     .adl-reference-sales .elementor-column:nth-child(-n+2) .adl-reference-card img {
@@ -3421,12 +3419,6 @@ body {
 
     .adl-reference-sales .elementor-container {
         grid-template-columns: 1fr;
-    }
-
-    .adl-reference-sales .elementor-column:last-child {
-        grid-column: auto;
-        justify-self: stretch;
-        max-width: none;
     }
 
     .adl-testimonial-sample-card {
