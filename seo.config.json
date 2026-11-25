@@ -1,0 +1,50 @@
+{
+  "origin": "https://mokatunde.hu",
+  "siteName": "Moka Tünde",
+  "person": {
+    "name": "Moka Tünde",
+    "jobTitle": "Ingatlanértékesítő",
+    "worksFor": "ADL Ingatlan",
+    "telephone": "+36 30 303 5501",
+    "email": "tunde.moka@adlingatlan.hu",
+    "image": "/assets/images/2026/07/tunde-kezdolap-rolam.jpg",
+    "url": "/rolam/",
+    "sameAs": [
+      "https://www.facebook.com/mokatunde.ingatlanertekesito",
+      "https://www.instagram.com/tunde.moka/"
+    ]
+  },
+  "business": {
+    "name": "Moka Tünde – ingatlanértékesítés",
+    "logo": "/assets/images/2026/07/moka-tunde-adl-logo.png",
+    "areaServed": [
+      "Budapest",
+      "Pest megye"
+    ],
+    "services": [
+      "Ingatlan eladás",
+      "Ingatlan vásárlás",
+      "Bérbeadás",
+      "Beruházói együttműködés"
+    ]
+  },
+  "noindex": [
+    "/adatkezelesi-es-adatvedelmi-szabalyzat/",
+    "/adatkezelesi-tajekoztato-ugyfelszolgalat/",
+    "/cookie-policy-eu/",
+    "/erintetti-jogosultsaggal-kapcsolatos-kerveny/",
+    "/erintetti-tajekoztato-webes/",
+    "/impresszum/",
+    "/jogi-dokumentaciok/",
+    "/suti-kezeles/",
+    "/elementor-849/",
+    "/category/uncategorized/",
+    "/mi-tortenik-most-a-xi-keruleti-ingatlanpiacon/",
+    "/belfoldi-ingatlanok/",
+    "/kulfoldi-ingatlanok/"
+  ],
+  "skip": [
+    "/magazin/",
+    "/spanyol-ingatlan/"
+  ]
+}

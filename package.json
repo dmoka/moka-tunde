@@ -5,8 +5,8 @@
   "description": "Tünde Ingatlan — static portfolio template",
   "scripts": {
     "dev": "npx serve -l 8900 .",
-    "check": "node scripts/check-links.mjs",
-    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-links.mjs && node scripts/seo.mjs --check",
+    "build": "node scripts/build.mjs && node scripts/seo.mjs",
     "brand": "node scripts/apply-brand.mjs"
   }
 }

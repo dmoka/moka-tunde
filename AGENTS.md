@@ -19,8 +19,8 @@ looks unless explicitly asked.**
 
 ```sh
 npm run dev     # serve locally at http://localhost:8900 (npx serve)
-npm run check   # link/asset integrity — must print "all local references OK"
-npm run build   # sync partials/header.html + footer.html into all pages
+npm run check   # link/asset integrity + SEO freshness — must print "all local references OK" and "seo OK"
+npm run build   # sync partials into all pages, then rebuild every page's SEO block + sitemap.xml
 npm run brand   # apply brand.config.json identity values across the site
 git push origin main    # deploy: a push a main-re automatikusan buildel a Vercelen
 ```
@@ -34,7 +34,7 @@ Node ≥ 18 required for the scripts.
 index.html                    home page (also the canonical page example)
 szolgaltatasok/ rolam/        one folder per page, each holds one index.html
 referenciak/ kapcsolat/
-blog/                         blog index; posts live under /2023/MM/DD/slug/
+blog/                         blog index; posts live under /blog/<slug>/
 impresszum/ suti-kezeles/ …   legal pages (GDPR boilerplate + placeholder data)
 partials/
   header.html, footer.html    single source of truth for nav + footer
@@ -71,7 +71,12 @@ vercel.json                   cleanUrls off, trailingSlash on — keep both
 4. **Path conventions:** asset references are root-absolute
    (`/assets/images/...`); page links are root-absolute directory URLs with
    trailing slash (`/rolam/`). Never introduce relative `../` links.
-5. **`npm run check` must be green before any commit.** It catches broken
+5. **SEO tags only via the `<!-- seo:start -->…<!-- seo:end -->` block + `npm run build`.**
+   `scripts/seo.mjs` regenerates robots, canonical, og:*, article:* and the
+   JSON-LD in every page from `<title>` + the description meta, and writes
+   `sitemap.xml`. Never add a robots/canonical/og/JSON-LD tag by hand — the
+   build deletes it. Site-wide facts and the noindex list: `seo.config.json`.
+6. **`npm run check` must be green before any commit.** It catches broken
    refs from moves/renames/typos. It scans href/src and CSS `url()`.
 
 ## Common tasks
@@ -80,8 +85,9 @@ vercel.json                   cleanUrls off, trailingSlash on — keep both
 Open that page's `index.html`, find the text, change it. Watch for
 Elementor's split spans: a leading capital may be wrapped separately
 (`<span>M</span><span>oka …`), so search for a fragment, not the full
-sentence. Text also appears in the page's JSON-LD `<script>` and meta
-description — update those too if the change matters for SEO.
+sentence. If the change matters for search, also update `<title>` and the
+description meta inside the seo block, then `npm run build` (it regenerates
+og:* and JSON-LD from those two).
 
 ### Change nav or footer
 Edit `partials/header.html` or `partials/footer.html`, run `npm run build`.
@@ -92,19 +98,23 @@ active item — that matches the original site). Verify with
 
 ### Add a new page
 1. Copy the closest existing page folder (e.g. `cp -r rolam ujoldal`).
-2. Edit content, `<title>`, meta description, JSON-LD, and og: tags.
+2. Edit content, `<title>` and the description meta in the seo block
+   (unique per page, ~150 characters, says what the page is about).
 3. Page-specific Elementor styles: the copied page links
    `/assets/images/elementor/css/post-<id>.css`. Reusing the source page's
    CSS is fine; for diverging styles create your own stylesheet instead.
 4. Add the page to `partials/header.html`/`footer.html` if it belongs in
    the nav, then `npm run build`.
-5. `npm run check`, visual check via `npm run dev`.
+5. `npm run build` (adds the page to `sitemap.xml`), `npm run check`, visual
+   check via `npm run dev`. A page that must stay out of Google goes into
+   `noindex` in `seo.config.json`.
 
 ### Add a blog post
-Copy an existing post folder under `2023/…` (structure is
-`/YYYY/MM/DD/slug/index.html`), edit content + metadata, then add a card for
-it on `blog/index.html` (copy an existing card block). The date path is
-cosmetic — any date works.
+Copy an existing post folder under `blog/` (structure `/blog/<slug>/index.html`),
+edit content, `<title>` and the description meta. In the seo block, **delete the
+two `article:published_time` / `article:modified_time` lines** copied from the
+old post — `npm run build` then stamps today's date. Add a card for it on
+`blog/index.html` (copy an existing card block). `npm run build`, `npm run check`.
 
 ### Styling changes
 Create `assets/css/custom.css` (first time: also add
@@ -158,8 +168,11 @@ the form, analytics). The lock file updates itself.
   "MINTA HIRDETÉS" (generated placeholder PNGs), `[SZÖGLETES ÉRTÉKEK]` in
   legal pages. The portraits (R62_*.jpg, bt*.jpg, IMG_1115*) are real photos
   of the previous owner, kept as stand-ins — flagged in TODO-BRAND.md.
-- **All pages carry `<meta name="robots" content="noindex, nofollow">`**
-  until launch. Don't remove it while placeholder content exists.
+- **The site is indexed by Google since 2026-11-25** (Search Console:
+  domain property mokatunde.hu). Pages listed under `noindex` in
+  `seo.config.json` stay out: legal pages (they still hold `[VÁLLALKOZÁS NEVE]`
+  placeholders), legacy WP pages and orphan duplicates. Every other page is in
+  `sitemap.xml`. `robots.txt` allows every crawler, AI crawlers included.
 - **Dead-but-harmless strings** exist inside Elementor JSON configs
   (`uploadUrl`, `home_url`, ajax nonces). They don't render and don't run;
   ignore them.
@@ -171,7 +184,7 @@ the form, analytics). The lock file updates itself.
 
 For any visual-surface change:
 1. `npm run check` green.
-2. `npm run build` reports `0/21` changed when partials weren't touched
+2. A second `npm run build` reports `0/N` synced and `seo: updated 0 files`
    (idempotency check).
 3. Screenshot the affected page at 1440px full-page (Playwright) before and
    after; pixel-diff. Only intended regions may differ. For pure content
